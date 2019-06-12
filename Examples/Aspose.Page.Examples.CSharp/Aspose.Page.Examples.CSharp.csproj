@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73801C8C-3871-44E3-ADA0-99AADB6D338F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Aspose.Page.Examples.CSharp</RootNamespace>
+    <AssemblyName>Aspose.Page.Examples.CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Page, Version=19.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\Aspose\Libraries\Aspose.Page_19.6\Bin\net452\Aspose.Page.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetZip, Version=1.13.3.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetZip.1.13.3\lib\net40\DotNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GettingStarted\LoadLicenseFromFile.cs" />
+    <Compile Include="GettingStarted\LoadLicenseFromStreamObject.cs" />
+    <Compile Include="GettingStarted\SecureLicense.cs" />
+    <Compile Include="GettingStarted\SetLicenseUsingEmbeddedResource.cs" />
+    <Compile Include="RunExamples.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkingWithDocumentConversion\PostScriptToImage.cs" />
+    <Compile Include="WorkingWithDocumentConversion\PostScriptToPdf.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoBMP.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoJPEG.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoPDF.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoPNG.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoTIFF.cs" />
+    <Compile Include="WorkingWithGradient\AddHorizontalGradient.cs" />
+    <Compile Include="WorkingWithGradient\AddLinearGradient.cs" />
+    <Compile Include="WorkingWithGradient\AddVerticalGradient.cs" />
+    <Compile Include="WorkingWithImages\AddImage.cs" />
+    <Compile Include="WorkingWithImages\AddTiledImage.cs" />
+    <Compile Include="WorkingWithPages\AddPage.cs" />
+    <Compile Include="WorkingWithShapes\AddEllipse.cs" />
+    <Compile Include="WorkingWithShapes\AddRectangle.cs" />
+    <Compile Include="WorkingWithText\AddText.cs" />
+    <Compile Include="WorkingWithText\AddTextUsingUnicodeString.cs" />
+    <Compile Include="WorkingWithTransparency\AddTransparentObject.cs" />
+    <Compile Include="WorkingWithTransparency\SetOpacityMask.cs" />
+    <Compile Include="WorkingWithVisualBrush\AddGrid.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
