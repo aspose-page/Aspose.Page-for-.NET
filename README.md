@@ -19,7 +19,6 @@ Directory | Description
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Page for .NET](https://products.aspose.com/page/net)
-+ **Download:** [Download Aspose.Page for .NET](https://www.nuget.org/packages/Aspose.Page/)
 + **Documentation:** [Aspose.Page for .NET Documentation](https://docs.aspose.com/display/pagenet/Home)
 + **Free Support:** [Aspose.Page for .NET Free Support Forum](https://forum.aspose.com/c/page)
 + **Paid Support:** [Aspose.Page for .NET Paid Support Forum](https://helpdesk.aspose.com/)
