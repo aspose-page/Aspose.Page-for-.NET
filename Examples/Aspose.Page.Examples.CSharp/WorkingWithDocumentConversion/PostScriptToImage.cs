@@ -25,6 +25,7 @@ namespace CSharp.WorkingWithDocumentConversion
 
             //Initialize options object with necessary parameters.
             ImageSaveOptions options = new ImageSaveOptions(suppressErrors);
+            
             // If you want to add special folder where fonts are stored. Default fonts folder in OS is always included.
             options.AdditionalFontsFolders = new string[] { @"{FONT_FOLDER}" };
 

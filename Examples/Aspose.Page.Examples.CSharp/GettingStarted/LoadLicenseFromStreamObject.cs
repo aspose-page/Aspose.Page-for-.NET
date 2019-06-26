@@ -16,7 +16,7 @@ namespace CSharp.GettingStarted
             // Initialize license object
             Aspose.Page.License license = new Aspose.Page.License();
             // Load license in FileStream
-            FileStream myStream = new FileStream("Aspose.Total.lic", FileMode.Open);
+            FileStream myStream = new FileStream("Aspose.Total.NET.lic", FileMode.Open);
             // Set license
             license.SetLicense(myStream);
             Console.WriteLine("License set successfully.");

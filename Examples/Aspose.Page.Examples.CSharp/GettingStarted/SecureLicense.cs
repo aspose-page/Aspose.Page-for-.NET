@@ -12,12 +12,12 @@ namespace CSharp.GettingStarted
         public static void Run()
         {
             // ExStart:1
-            using (Stream zip = new SecureLicense().GetType().Assembly.GetManifestResourceStream("Aspose.Total.lic.zip"))
+            using (Stream zip = new SecureLicense().GetType().Assembly.GetManifestResourceStream("Aspose.Total.NET.lic.zip"))
             {
                 using (ZipFile zf = ZipFile.Read(zip))
                 {
                     MemoryStream ms = new MemoryStream();
-                    ZipEntry e = zf["Aspose.Total.lic"];
+                    ZipEntry e = zf["Aspose.Total.NET.lic"];
                     e.ExtractWithPassword(ms, "test");
                     ms.Position = 0;
                 }

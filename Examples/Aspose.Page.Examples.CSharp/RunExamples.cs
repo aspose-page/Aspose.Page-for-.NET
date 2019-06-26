@@ -29,7 +29,7 @@ namespace CSharp
             // Getting Started
             // =====================================================
             // =====================================================
-             LoadLicenseFromFile.Run();
+            // LoadLicenseFromFile.Run();
             // LoadLicenseFromStreamObject.Run();
             // SetLicenseUsingEmbeddedResource.Run();
             // SecureLicense.Run();
@@ -39,12 +39,12 @@ namespace CSharp
             // WorkingWithDocumentConversion
             // =====================================================
             // =====================================================
-             PostScriptToPdf.Run();
+            // PostScriptToPdf.Run();
             // PostScriptToImage.Run();
-            // XPStoPNG.Run();
+             XPStoPNG.Run();
             // XPStoBMP.Run();
             // XPStoJPEG.Run();
-             XPStoTIFF.Run();
+            // XPStoTIFF.Run();
             // XPStoPDF.Run();
 
             // =====================================================
@@ -52,7 +52,7 @@ namespace CSharp
             // WorkingWithText
             // =====================================================
             // =====================================================
-             AddText.Run();
+            // AddText.Run();
             // AddTextUsingUnicodeString.Run();
 
             // =====================================================
@@ -60,7 +60,7 @@ namespace CSharp
             // WorkingWithImages
             // =====================================================
             // =====================================================
-             AddImage.Run();
+            // AddImage.Run();
             // AddTiledImage.Run();
 
             // =====================================================
@@ -69,7 +69,7 @@ namespace CSharp
             // =====================================================
             // =====================================================
             // AddLinearGradient.Run();
-             AddVerticalGradient.Run();
+            // AddVerticalGradient.Run();
             // AddHorizontalGradient.Run();
 
             // =====================================================
@@ -77,7 +77,7 @@ namespace CSharp
             // WorkingWithShapes
             // =====================================================
             // =====================================================
-             AddRectangle.Run();
+            // AddRectangle.Run();
             // AddEllipse.Run();
 
             // =====================================================
@@ -85,22 +85,22 @@ namespace CSharp
             // WorkingWithPages
             // =====================================================
             // =====================================================
-             AddPage.Run();
+            // AddPage.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithTransparency
             // =====================================================
             // =====================================================
-            AddTransparentObject.Run();
-            //SetOpacityMask.Run();
+            // AddTransparentObject.Run();
+            // SetOpacityMask.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithGrid
             // =====================================================
             // =====================================================
-            AddGrid.Run();
+            // AddGrid.Run();
 
 
 
