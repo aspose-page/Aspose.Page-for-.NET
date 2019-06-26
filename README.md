@@ -22,4 +22,4 @@ Directory | Description
 + **Documentation:** [Aspose.Page for .NET Documentation](https://docs.aspose.com/display/pagenet/Home)
 + **Free Support:** [Aspose.Page for .NET Free Support Forum](https://forum.aspose.com/c/page)
 + **Paid Support:** [Aspose.Page for .NET Paid Support Forum](https://helpdesk.aspose.com/)
-+ **Blog:** [Aspose.Page for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose-page-product-family/)
++ **Blog:** [Aspose.Page for .NET Blog](https://blog.aspose.com/category/page/)
