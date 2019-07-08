@@ -41,7 +41,7 @@ namespace CSharp
             // =====================================================
             // PostScriptToPdf.Run();
             // PostScriptToImage.Run();
-             XPStoPNG.Run();
+            // XPStoPNG.Run();
             // XPStoBMP.Run();
             // XPStoJPEG.Run();
             // XPStoTIFF.Run();
