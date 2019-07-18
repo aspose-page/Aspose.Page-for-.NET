@@ -1,8 +1,8 @@
 ## Aspose.Page-for-.NET
 
-[Aspose.Page for .NET](http://https://products.aspose.com/page/net) Aspose.Page for .NET offers features of creating new as well as manipulating existing XPS and EPS documents. It also provides functionality to convert XPS and EPS files into PDF and Images Documents and vice versa.
+[Aspose.Page for .NET](https://products.aspose.com/page/net) Aspose.Page for .NET offers features of creating new as well as manipulating existing XPS and EPS documents. It also provides functionality to convert XPS and EPS files into PDF and Images Documents and vice versa.
 
-This repository contains [Examples](Examples) projects for [Aspose.Page for .NET](http://https://products.aspose.com/page/net) to help you learn and write your own applications.
+This repository contains [Examples](Examples) projects for [Aspose.Page for .NET](https://products.aspose.com/page/net) to help you learn and write your own applications.
 
 <p align="center">
 
