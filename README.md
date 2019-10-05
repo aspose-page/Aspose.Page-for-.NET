@@ -15,6 +15,18 @@ Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
 
+## How to Run the Examples
++ You can either clone the repository using your favourite GitHub client or download the ZIP file from here.
++ Extract the contents of ZIP file to any folder on your computer. All the examples are located in the Examples folder.
++ The project is created in Visual Studio 2019, but the solution files are compatible with Visual Studio 2010 SP1 and higher.
++ Open the solution file in Visual Studio and build the project.
++ On the first run, the dependencies will automatically be downloaded via NuGet. This may take some time.
++ Data folder at the root folder of Examples contains input files which CSharp examples used. It is mandatory that you download the Data folder along with the examples project.
++ Open RunExamples.cs file, all the examples are called from here.
++ Uncomment the examples you want to run from within the project.
+
+Please find more details for how to run the examples [here](https://docs.aspose.com/display/pagenet/How+to+Run+Examples).
+
 ## Resources
 
 + **Website:** [www.aspose.com](https://www.aspose.com)
