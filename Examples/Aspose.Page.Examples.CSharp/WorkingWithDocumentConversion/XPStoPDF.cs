@@ -1,4 +1,4 @@
-﻿using Aspose.Page.Xps;
+﻿using Aspose.Page.XPS;
 
 namespace CSharp.WorkingWithDocumentConversion
 {
@@ -20,16 +20,16 @@ namespace CSharp.WorkingWithDocumentConversion
                 // XpsDocument document = new XpsDocument(inputFileName, new XpsLoadOptions());
 
                 // Initialize options object with necessary parameters.
-                Aspose.Page.Xps.Presentation.Pdf.PdfSaveOptions options = new Aspose.Page.Xps.Presentation.Pdf.PdfSaveOptions()
+                Aspose.Page.XPS.Presentation.Pdf.PdfSaveOptions options = new Aspose.Page.XPS.Presentation.Pdf.PdfSaveOptions()
                 {
                     JpegQualityLevel = 100,
-                    ImageCompression = Aspose.Page.Xps.Presentation.Pdf.PdfImageCompression.Jpeg,
-                    TextCompression = Aspose.Page.Xps.Presentation.Pdf.PdfTextCompression.Flate,
+                    ImageCompression = Aspose.Page.XPS.Presentation.Pdf.PdfImageCompression.Jpeg,
+                    TextCompression = Aspose.Page.XPS.Presentation.Pdf.PdfTextCompression.Flate,
                     PageNumbers = new int[] { 1, 2, 6 }
                 };
 
                 // Create rendering device for PDF format
-                Aspose.Page.Xps.Presentation.Pdf.PdfDevice device = new Aspose.Page.Xps.Presentation.Pdf.PdfDevice(pdfStream);
+                Aspose.Page.XPS.Presentation.Pdf.PdfDevice device = new Aspose.Page.XPS.Presentation.Pdf.PdfDevice(pdfStream);
 
                 document.Save(device, options);
             }

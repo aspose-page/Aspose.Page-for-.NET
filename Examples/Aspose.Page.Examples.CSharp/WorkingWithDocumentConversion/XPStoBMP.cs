@@ -1,7 +1,5 @@
-﻿using Aspose.Page;
-using Aspose.Page.Xps;
-using Aspose.Page.Xps.Presentation.Image;
-using System.Drawing;
+﻿using Aspose.Page.XPS;
+using Aspose.Page.XPS.Presentation.Image;
 using System.IO;
 
 namespace CSharp.WorkingWithDocumentConversion

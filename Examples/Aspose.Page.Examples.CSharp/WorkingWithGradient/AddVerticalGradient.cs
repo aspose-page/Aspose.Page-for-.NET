@@ -1,11 +1,7 @@
-﻿
-using Aspose.Page.Xps;
-using Aspose.Page.Xps.XpsModel;
-using System;
+﻿using Aspose.Page.XPS;
+using Aspose.Page.XPS.XpsModel;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 
 namespace CSharp.WorkingWithGradient
 {
