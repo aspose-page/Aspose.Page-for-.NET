@@ -10,9 +10,9 @@ namespace CSharp.WorkingWithDocumentConversion
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WorkingWithDocumentConversion();
             // Initialize PDF output stream
-            using (System.IO.Stream pdfStream = System.IO.File.Open(dataDir + "input.xps", System.IO.FileMode.Create, System.IO.FileAccess.Write))
+            using (System.IO.Stream pdfStream = System.IO.File.Open(dataDir + "XPStoPDF_out.pdf", System.IO.FileMode.OpenOrCreate, System.IO.FileAccess.Write))
             // Initialize XPS input stream
-            using (System.IO.Stream xpsStream = System.IO.File.Open(dataDir + "XPStoPDF.pdf", System.IO.FileMode.Open, System.IO.FileAccess.Read))
+            using (System.IO.Stream xpsStream = System.IO.File.Open(dataDir + "input.xps", System.IO.FileMode.Open))
             {
                 // Load XPS document form the stream
                 XpsDocument document = new XpsDocument(xpsStream, new XpsLoadOptions());
