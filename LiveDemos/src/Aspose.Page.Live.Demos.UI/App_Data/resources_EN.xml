@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <res name="ApplicationTitle">Aspose.Page Live Demos</res>
+  <res name="ApplicationTitle2">Free App Solutions for Page files nanipulation </res>
+
+	<res name="Viewerh4">Viewer</res>
+	<res name="btnViewNow">VIEW NOW</res>
+	<res name="ViewerAction">View</res>
+  <res name="HomePageTitle">Home</res>
+  <res name="DownloadFileLinkTitle">Download your file</res>
+	<res name="NoSearchResultsMessage">No search results</res>
+  <res name="FileConvertedSuccessMessage">Your file has been converted successfully, please download converted file</res>
+  <res name="InvalidFileExtension">Invalid file, please upload a file with extension</res>
+  <res name="InvalidFile">Invalid file, please ensure that uploading correct file</res>
+	<res name="FileAmountMessageOne">Please select only one file</res>
+	<res name="FileAmountMessageLessTen">Please select less than ten files</res>
+  <res name="btnConvertNow">CONVERT NOW</res>
+	<res name="AsposePage">Aspose.Page</res>
+	<res name="EditorReturnQuestion">Are you sure you want to return?</res>
+	<res name="AsposePAGE">Aspose.Page</res>
+  <res name="PageNotFound">404 Page not found</res>
+  <res name="BrokenLinkTitle">The link you followed probably broken or the page has been moved</res>
+  <res name="btnBackHome">Back to Home</res>
+	<res name="FileSelectMessage">Please select a file to convert</res>
+  <res name="SaveAs">Save as</res>
+	<res name="ViewerAPPName">Viewer</res>
+	<res name="pageConversionSaveAsOptions">PDF, BMP, PNG, TIFF, JPG</res>
+  <res name="DropOrUploadFile">Drop or upload your file</res>
+  <res name="DropOrUploadFiles">Drop or upload your files</res>
+	<res name="pageValidationExpression">.eps|.ps|.xps</res>
+  <res name="FileConvertedSuccessMessage1">Your file has been converted successfully</res>
+  <res name="DownLoadNow">DOWNLOAD NOW</res>
+  <res name="FileWrongTypeMessage">You are trying to upload document(s) of unsupported type: </res>
+	<res name="pageConversionPageTitle">XPS and PostScript converter allows to convert XPS &amp; PS/EPS to PDF and Images</res>
+	<res name="pageConversionMetaDescription">Online XPS, EPS and PS converter to PDF and JPEG, BMP, PNG, TIFF. Try it for free!</res>
+	<res name="pageConversionTitle">PS, EPS &amp; XPS converter</res>
+	<res name="pageConversionSubTitle">Online XPS, EPS and PS converter to PDF and JPEG, BMP, PNG, TIFF. Try it for free!</res>
+	<!-- Conversion App - How To-->
+	<res name="HowtoConversionTitle">How to convert {0} file using {1}</res>
+	<res name="HowtoConversionFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoConversionFeature2">Your file will be uploaded and will be converted to required format.</res>
+	<res name="HowtoConversionFeature3">Download link of converted file will be available instantly after conversion.</res>
+	<res name="WrongRegExpMessage">Wrong regular expression</res>
+  <res name="ConvertAnotherFile">Convert another file</res>
+  
+	<res name="AsposeProductFor"></res>
+
+ 
+  <res name="Feature1">Fast and Easy Conversion</res>
+  <res name="Feature1Description">Upload your document, choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+  <res name="Feature1TasksDescription">Upload your project (or select online), choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+  <res name="Feature2">Convert from Anywhere</res>
+  <res name="Feature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+  <res name="Feature3">Conversion Quality</res>
+  <res name="Feature3Description">. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+	
+  <res name="PoweredBy">Powered by</res>
+  <res name="Conversionh4">Conversion</res>
+  
+  <res name="SaveAsDescription">Save as: {0}</res>
+  <res name="ConversionCategory">conversion</res>
+  <res name="AsposeProductFamilyInclude">{0} Product Family Includes</res>
+
+	<res name="ConversionFeature1">Fast and Easy Conversion</res>
+	<res name="ConversionFeature1Description">Upload your document, choose the save format type and click on “Convert” button. You will get the download link as soon as the file is converted</res>
+	
+	<res name="ConversionFeature2">Convert from Anywhere</res>
+	<res name="ConversionFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ConversionFeature3">Conversion Quality</res>
+	<res name="ConversionButton">CONVERT</res>
+	<res name="ConversionAnotherFile">Convert other documents</res>
+	<res name="ConversionSuccessMessage">Your files have been processed successfully</res>	
+	<res name="ConversionAction">Convert</res>
+
+	
+	<res name="pageViewerPageTitle">XPS &amp; PS/EPS reader, view XPS and PostScript online.</res>
+	<res name="pageViewerMetaDescription">PS, EPS &amp; XPS viewer online. View PostScript and XPS files as images from any browser. Save images directly from the viewer.</res>
+	<res name="pageViewerTitle">PS, EPS &amp; XPS viewer online</res>
+	<res name="pageViewerSubTitle">PS, EPS &amp; XPS viewer online. View PostScript and XPS files as images from any browser. Save images directly from the viewer.</res>
+	<res name="pageViewerValidationExpression">.ps|.eps|.xps</res>
+	<res name="pageViewerLiFeature1">View your Free Online PS, EPS &amp; XPS files as an image representation</res>
+	
+	<res name="HowtoViewerTitle">How to View {0} file using {1}</res>
+	<res name="HowtoViewerFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoViewerFeature2">Your document file will be automatically rendered for you to view instantly.</res>
+	<res name="HowtoViewerFeature3">Download the document file in original, image or PDF format.</res>
+
+	<res name="ViewerFeature1">Quick and Easy Viewer</res>
+	<res name="ViewerFeature1Description">Upload your document and you will be redirected to the Viewer app with great user experience and many more features</res>
+	<res name="ViewerFeature1DescriptionChoice">Upload your document and you will be redirected to the {0} Viewer app with great user experience and many more features</res>
+	<res name="ViewerFeature2">View from Anywhere</res>
+	<res name="ViewerFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ViewerFeature3">Viewer Quality</res>
+	<res name="ViewerLiFeature1">View your Photoshop online</res>
+	<res name="ViewerFeature3Description">. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+
+	<res name="HowtoSignatureTitle">How to eSign XPS using {1}</res>
+	<res name="HowtoSignatureFeature1">Click inside the file drop area to upload a XPS file or drag &amp; drop a XPS file.</res>
+	<res name="HowtoSignatureFeature2">From dropdown, please choose one of the options i.e. Drawing, Text or Image.</res>
+	<res name="HowtoSignatureFeature3">If you opt for Drawing, please draw your signature. You can also choose the drawing color. If you opt for Text, please add your signature text inside the textbox. If you opt for Image, please upload your signature image.</res>
+	<res name="HowtoSignatureFeature4">Select your "Save as" type or leave it as default.</res>
+	<res name="HowtoSignatureFeature5">Click "SIGN" button to eSign your document.</res>
+	<res name="SignatureTextErrorMessage">Enter the text</res>
+	<res name="SignatureDrawingErrorMessage">Draw the signature</res>
+	<res name="AddSignatureinAnotherFile">Sign another xps</res>
+	<res name="AddSignatureButton">SIGN</res>
+	<res name="AddSignatureTextPlaceholder">Add Your Text Signature</res>
+	<res name="SignatureFeature1">Fast and Easy Signature</res>
+	<res name="SignatureFeature1Description">Upload your document, select signature type and click on “SIGN” button. You will get the download link as soon as the file is signed</res>
+	<res name="SignatureFeature2">Sign from Anywhere</res>
+	<res name="SignatureFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="SignatureFeature3">Signature Quality</res>
+	<res name="SignatureViewer">VIEW RESULTS</res>
+	<res name="SignatureTypeDrawing">Drawing</res>
+	<res name="SignatureTypeText">Text</res>
+	<res name="SignatureTypeImage">Image</res>
+	<res name="SignatureButton">SIGN</res>
+	<res name="SignatureSuccessMessage">Signature has been added successfully</res>
+	<res name="SignatureSentEmailSuccessMessage">Your files has been signed successfully.</res>
+	<res name="SignatureAnotherFile">Sign other xps</res>
+	<res name="SignatureAction">Sign</res>
+	<res name="pageSignaturePageTitle">Sign XPS Documents with Text, Image or Drawing</res>
+	<res name="pageSignatureMetaDescription">100% free tool to electornically sign XPS documents. Create text, image or drawing based signature and sign XPS online.</res>
+	<res name="pageSignatureTitle">Sign XPS document online</res>
+	<res name="pageSignatureSubTitle">100% free tool to electornically sign XPS documents. Create text, image or drawing based signature and sign XPS online.</res>
+	<res name="SignatureLiFeature1">Instantly download output file</res>
+	<res name="pageSignatureSaveAsOptions">XPS</res>
+	<res name="DropOrUploadImageFile">Drop or upload your image</res>
+	<res name="AddSignatureImageFileExtenstions">.jpg|.jpeg|.png|.bmp</res>
+	<res name="pageSignatureValidationExpression">.xps</res>
+</resources>
+
+
+
