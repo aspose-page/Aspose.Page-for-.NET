@@ -17,8 +17,8 @@ namespace Aspose.Page.Live.Demos.UI.Controllers
 
 		public ActionResult Default()
 		{
-			ViewBag.PageTitle = "Create, Edit or Convert PSD &amp; PSB files to PDF &amp; image formats";
-			ViewBag.MetaDescription = "Free Apps to edit Photoshop files. Ability to update layer properties, add watermarks, rotate, scale, Flip, Crop, Dithering, Raster Conversion.";
+			ViewBag.PageTitle = "Free Apps for XPS, PS, EPS viewing | PDF and Image Conversion";
+			ViewBag.MetaDescription = "Platform independent Free Apps providing capabilities to view and convert XPS, PS and EPS files to PDF or Raster Image formats. No subscription required.";
 			var model = new LandingPageModel(this);
 
 			return View(model);
