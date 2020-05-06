@@ -52,7 +52,7 @@ namespace Aspose.Page.Live.Demos.UI.Models
 
     #region FileDrop
     public bool Multiple => !UploadAndRedirect;
-    public string DropFilesPrompt => Resources["DropOrUploadFile"];
+    public string DropFilesPrompt => Parent.DropOrUploadFileLabel;
     public string Accept => Parent.ExtensionsString.Replace("|.", ",.");
     #endregion
 
