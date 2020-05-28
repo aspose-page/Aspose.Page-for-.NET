@@ -2,7 +2,7 @@
 
 [Aspose.Page for .NET](https://products.aspose.com/page/net) Aspose.Page for .NET offers features of creating new as well as manipulating existing XPS and EPS documents. It also provides functionality to convert [XPS](https://wiki.fileformat.com/page-description-language/xps/) and [EPS](https://wiki.fileformat.com/page-description-language/eps/) files into [PDF](https://wiki.fileformat.com/view/pdf/) and Images Documents and vice versa.
 
-This repository contains [Examples](Examples) and [LiveDemos](LiveDemos) projects for [Aspose.Page for .NET](https://products.aspose.com/page/net) to help you learn and write your own applications.
+This repository contains [Demos](Demos) and [Examples](Examples) projects for [Aspose.Page for .NET](https://products.aspose.com/page/net) to help you learn and write your own applications.
 
 <p align="center">
 
@@ -13,8 +13,8 @@ This repository contains [Examples](Examples) and [LiveDemos](LiveDemos) project
 
 Directory | Description
 --------- | -----------
+[Demos](Demos)  | Aspose.Page for .NET Live Demos Source Code
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
-[LiveDemos](LiveDemos)  | Aspose.Page for .NET Live Demos Source Code
 
 ## How to Run the Examples
 + You can either clone the repository using your favourite GitHub client or download the ZIP file from here.
