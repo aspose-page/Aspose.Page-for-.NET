@@ -36,7 +36,7 @@ namespace CSharp.WorkingWithVisualBrush
             XpsCanvas canvas = doc.AddCanvas();
             canvas.RenderTransform = doc.CreateMatrix(1f, 0f, 0f, 1f, 268f, 70f);
             // Add grid
-            canvas.AddPath(gridPath); 
+            canvas.AddPath(pathGeometry);
             // Red transparent rectangle in the middle top
             XpsPath path = canvas.AddPath(doc.CreatePathGeometry("M 30,20 l 258.24,0 0,56.64 -258.24,0 Z"));
             path = canvas.AddPath(doc.CreatePathGeometry("M 10,10 L 228,10 228,100 10,100"));
