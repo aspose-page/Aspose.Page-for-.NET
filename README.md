@@ -1,8 +1,6 @@
-## Aspose.Page-for-.NET
+# Aspose.Page-for-.NET
 
 [Aspose.Page for .NET](https://products.aspose.com/page/net) Aspose.Page for .NET offers features of creating new as well as manipulating existing XPS and EPS documents. It also provides functionality to convert [XPS](https://wiki.fileformat.com/page-description-language/xps/) and [EPS](https://wiki.fileformat.com/page-description-language/eps/) files into [PDF](https://wiki.fileformat.com/view/pdf/) and Images Documents and vice versa.
-
-This repository contains [Examples](Examples) projects for [Aspose.Page for .NET](https://products.aspose.com/page/net) to help you learn and write your own applications.
 
 <p align="center">
 
@@ -11,28 +9,90 @@ This repository contains [Examples](Examples) projects for [Aspose.Page for .NET
   </a>
 </p>
 
+This repository contains [Demos](Demos) and [Examples](Examples) projects for [Aspose.Page for .NET](https://products.aspose.com/page/net) to help you learn and write your own applications.
+
 Directory | Description
 --------- | -----------
+[Demos](Demos)  | Aspose.Page for .NET Live Demos Source Code
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
 
-## How to Run the Examples
-+ You can either clone the repository using your favourite GitHub client or download the ZIP file from here.
-+ Extract the contents of ZIP file to any folder on your computer. All the examples are located in the Examples folder.
-+ The project is created in Visual Studio 2019, but the solution files are compatible with Visual Studio 2010 SP1 and higher.
-+ Open the solution file in Visual Studio and build the project.
-+ On the first run, the dependencies will automatically be downloaded via NuGet. This may take some time.
-+ Data folder at the root folder of Examples contains input files which CSharp examples used. It is mandatory that you download the Data folder along with the examples project.
-+ Open RunExamples.cs file, all the examples are called from here.
-+ Uncomment the examples you want to run from within the project.
+# XPS File Manipulation via .NET API
 
-Please find more details for how to run the examples [here](https://docs.aspose.com/display/pagenet/How+to+Run+Examples).
+[Aspose.Page for .NET](https://products.aspose.com/page/net) is an on premise .NET API that allows you to add XPS manipulation features to your own applications. The API also supports to convert XPS, EPS & PS documents to other formats.
 
-## Resources
+Developers can perform various operations on XPS documents, such as, add [text](https://docs.aspose.com/display/pagenet/Working+with+Text), [images](https://docs.aspose.com/display/pagenet/Working+with+Images), [pages](https://docs.aspose.com/display/pagenet/Working+with+Pages), [gradient](https://docs.aspose.com/display/pagenet/Working+with+Gradient), grid using [visual brush](https://docs.aspose.com/display/pagenet/Working+with+Visual+Brush), [transparency object](https://docs.aspose.com/display/pagenet/Add+Transparent+Object+inside+XPS+Document) and [set opacity mask](https://docs.aspose.com/display/pagenet/Set+Opacity+Mask). It allows to create, edit and convert the file pages as well as the ability to manipulate documents and elements, create vector graphics, group shapes and specifying colors in different color spaces including sRGB, scRGB, and any space based on ICC profile.
 
-+ **Website:** [www.aspose.com](https://www.aspose.com)
-+ **Product Home:** [Aspose.Page for .NET](https://products.aspose.com/page/net)
-+ **Download:** [Download Aspose.Page for .NET](https://www.nuget.org/packages/Aspose.Page/)
-+ **Documentation:** [Aspose.Page for .NET Documentation](https://docs.aspose.com/display/pagenet/Home)
-+ **Free Support:** [Aspose.Page for .NET Free Support Forum](https://forum.aspose.com/c/page)
-+ **Paid Support:** [Aspose.Page for .NET Paid Support Forum](https://helpdesk.aspose.com/)
-+ **Blog:** [Aspose.Page for .NET Blog](https://blog.aspose.com/category/page/)
+## XPS, EPS & PS Processing Features
+
+- Create & modify XPS documents via API.
+- [Add pages to XPS](https://docs.aspose.com/display/pagenet/Add+Pages+to+XPS+Document) documents.
+- Create vector graphic shapes (Path element) and text strings (Glyphs element).
+- Group various elements as well as modify the appearance of text strings and graphics.
+- Support for visual brush, image brush, solid color brush and more.
+- Work with multiple documents within an XPS document.
+- Preserve print tickets and  add default print tickets to new XPS documents.
+- Perform cross-package operations such as, inserting a page from another document.
+- Conversion of XPS, PS & EPS documents to other popular formats.
+- Supports PostScript language levels 1-3 with an exception of font types: Type2 (CFF), Type14 (Chameleon), Types 9, 10, 11, 32 (CID-Keyed).
+
+## Read & Write XPS Format
+
+**Fixed Layout:** XPS
+
+## Save XPS, PS & EPS Documents As
+
+**Fixed Layout:** PDF\
+**Images:** PNG, JPEG, TIFF, BMP
+
+## Save PS & EPS Documents As
+
+**Metafiles:** EMF, WMF\
+**Animation:** GIF
+
+## Platform Independence
+
+Aspose.Page for .NET can be integrated with any kind of ASP.NET Web Application or a Windows Application.
+
+## Getting Started with Aspose.Page for .NET
+
+Are you ready to give Aspose.Page for .NET a try? Simply execute `Install-Package Aspose.Page` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.Page for .NET and want to upgrade the version, please execute `Update-Package Aspose.Page` to get the latest version.
+
+## Create an XPS Document from Scratch via C# Code
+
+Execute below code snippet to see how Aspose.Page API performs in your own environment or check the [GitHub Repository](https://github.com/aspose-page/Aspose.Page-for-.NET) for other common usage scenarios. 
+
+```csharp
+// create XPS document
+XpsDocument xDocs = new XpsDocument();
+// add glyph to the document
+var glyphs = xDocs.AddGlyphs("Arial", 12, FontStyle.Regular, 300f, 450f, "Hello World!");
+glyphs.Fill = xDocs.CreateSolidColorBrush(Color.Black);
+// save result
+xDocs.Save(dir + "output.xps");
+```
+
+## Convert a PostScript (PS) File to PDF Format
+
+Aspose.Page for .NET allows you to work with document conversion, such as; PS to images, PS to PDF, XPS to images, XPS to PDF and so on. The following snippet demonstrates the conversion of PS to PDF using streams:
+
+```csharp
+// initialize PostScript input stream
+var psStream = new System.IO.FileStream(dir + "template.ps", System.IO.FileMode.Open, System.IO.FileAccess.Read);
+// initialize PDF output stream
+var pdfStream = new System.IO.FileStream(dir + "output.pdf", System.IO.FileMode.Create, System.IO.FileAccess.Write);
+// read PS file
+var document = new PsDocument(psStream);
+// create a device for output steram
+var device = new PdfDevice(pdfStream);
+try
+{
+    document.Save(device, options);
+}
+finally
+{
+    psStream.Close();
+    pdfStream.Close();
+}
+```
+
+[Product Page](https://products.aspose.com/page/net) | [Docs](https://docs.aspose.com/display/pagenet/Home) | [Demos](https://products.aspose.app/page/family) | [API Reference](https://apireference.aspose.com/page/net) | [Examples](https://github.com/aspose-page/Aspose.Page-for-.NET) | [Blog](https://blog.aspose.com/category/page/) | [Free Support](https://forum.aspose.com/c/page) |  [Temporary License](https://purchase.aspose.com/temporary-license)
