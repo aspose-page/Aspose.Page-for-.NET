@@ -1,3 +1,4 @@
+![Nuget](https://img.shields.io/nuget/v/Aspose.Page) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Page) ![GitHub](https://img.shields.io/github/license/aspose-page/Aspose.Page-for-.NET)
 
 # XPS & Postscript File Manipulation API
 
