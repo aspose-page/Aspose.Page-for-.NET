@@ -85,4 +85,4 @@ finally
 }
 ```
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/page/net) | [Docs](https://docs.aspose.com/page/net/) | [Demos](https://products.aspose.app/page/family) | [API Reference](https://apireference.aspose.com/page/net) | [Examples](https://github.com/aspose-page/Aspose.Page-for-.NET) | [Blog](https://blog.aspose.com/category/page/) | [Free Support](https://forum.aspose.com/c/page) |  [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/page/net) | [Docs](https://docs.aspose.com/page/net/) | [Demos](https://products.aspose.app/page/family) | [API Reference](https://apireference.aspose.com/page/net) | [Examples](https://github.com/aspose-page/Aspose.Page-for-.NET) | [Blog](https://blog.aspose.com/category/page/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/page) |  [Temporary License](https://purchase.aspose.com/temporary-license)
