@@ -33,11 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Page, Version=20.11.0.0, Culture=neutral, PublicKeyToken=f0262d67fe233d63, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Page.20.11.0\lib\net452\Aspose.Page.dll</HintPath>
+    <Reference Include="Aspose.Page, Version=22.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.22.2.0\lib\net452\Aspose.Page.dll</HintPath>
     </Reference>
-    <Reference Include="DotNetZip, Version=1.14.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
-      <HintPath>..\packages\DotNetZip.1.14.0\lib\net40\DotNetZip.dll</HintPath>
+    <Reference Include="DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\packages\DotNetZip.1.16.0\lib\net40\DotNetZip.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -63,6 +63,8 @@
     <Compile Include="WorkingWithDocumentConversion\XPStoPDF.cs" />
     <Compile Include="WorkingWithDocumentConversion\XPStoPNG.cs" />
     <Compile Include="WorkingWithDocumentConversion\XPStoTIFF.cs" />
+    <Compile Include="WorkingWithDocumentMerging\PostScriptToPdf.cs" />
+    <Compile Include="WorkingWithDocumentMerging\XPStoPDF.cs" />
     <Compile Include="WorkingWithGradient\AddHorizontalGradient.cs" />
     <Compile Include="WorkingWithGradient\AddLinearGradient.cs" />
     <Compile Include="WorkingWithGradient\AddVerticalGradient.cs" />

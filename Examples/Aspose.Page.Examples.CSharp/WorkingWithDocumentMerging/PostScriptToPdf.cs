@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CSharp.WorkingWithDocumentConversion
+namespace CSharp.WorkingWithDocumentMerging
 {
     public class PostScriptToPdf
     {
@@ -13,12 +13,15 @@ namespace CSharp.WorkingWithDocumentConversion
         {
             // ExStart:1
             // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_WorkingWithDocumentConversion();
+            string dataDir = RunExamples.GetDataDir_WorkingWithDocumentMerging();
             // Initialize PDF output stream
             System.IO.FileStream pdfStream = new System.IO.FileStream(dataDir + "outputPDF_out.pdf", System.IO.FileMode.Create, System.IO.FileAccess.Write);
-            // Initialize PostScript input stream
+            // Initialize the first PostScript file input stream
             System.IO.FileStream psStream = new System.IO.FileStream(dataDir + "input.ps", System.IO.FileMode.Open, System.IO.FileAccess.Read);
             PsDocument document = new PsDocument(psStream);
+
+            // Create an array of PostScript files that will be merged with the first one
+            string[] filesForMerge = new string[] { dataDir + "input2.ps", dataDir + "input3.ps" };
 
             // If you want to convert Postscript file despite of minor errors set this flag
             bool suppressErrors = true;
@@ -35,7 +38,7 @@ namespace CSharp.WorkingWithDocumentConversion
 
             try
             {
-                document.Save(device, options);
+                document.Merge(filesForMerge, device, options);
             }
             finally
             {

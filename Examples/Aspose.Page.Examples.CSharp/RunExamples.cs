@@ -12,6 +12,7 @@ using CSharp.WorkingWithPages;
 using CSharp.WorkingWithTransparency;
 using CSharp.WorkingWithVisualBrush;
 using CSharp.WorkingWithDocumentConversion;
+using CSharp.WorkingWithDocumentMerging;
 
 namespace CSharp
 {
@@ -29,7 +30,7 @@ namespace CSharp
             // Getting Started
             // =====================================================
             // =====================================================
-            // LoadLicenseFromFile.Run();
+            LoadLicenseFromFile.Run();
             // LoadLicenseFromStreamObject.Run();
             // SetLicenseUsingEmbeddedResource.Run();
             // SecureLicense.Run();
@@ -46,6 +47,14 @@ namespace CSharp
             //XPStoJPEG.Run();
             //XPStoTIFF.Run();
             //XPStoPDF.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithDocumentMerging
+            // =====================================================
+            // =====================================================
+            //CSharp.WorkingWithDocumentMerging.PostScriptToPdf.Run();
+            //CSharp.WorkingWithDocumentMerging.XPStoPDF.Run();
 
             // =====================================================
             // =====================================================
@@ -152,6 +161,11 @@ namespace CSharp
         public static String GetDataDir_WorkingWithDocumentConversion()
         {
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithDocumentConversion/");
+        }
+
+        public static String GetDataDir_WorkingWithDocumentMerging()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithDocumentMerging/");
         }
 
         public static string GetDataDir_Data()
