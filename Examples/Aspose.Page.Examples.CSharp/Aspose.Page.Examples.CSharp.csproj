@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Page, Version=22.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.22.2.0\lib\net452\Aspose.Page.dll</HintPath>
+    <Reference Include="Aspose.Page, Version=22.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.22.4.0\lib\net452\Aspose.Page.dll</HintPath>
     </Reference>
     <Reference Include="DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\..\packages\DotNetZip.1.16.0\lib\net40\DotNetZip.dll</HintPath>
@@ -78,6 +78,15 @@
     <Compile Include="WorkingWithTransparency\AddTransparentObject.cs" />
     <Compile Include="WorkingWithTransparency\SetOpacityMask.cs" />
     <Compile Include="WorkingWithVisualBrush\AddGrid.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_AddNamespace.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_AddNamedValueItem.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_ChangeNamedValueItem.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_ChangeArrayItems.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_AddArrayItems.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_AddSimpleProperties.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_ChangeValues.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\AddMetadata.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\GetMetadata.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -58,6 +58,20 @@ namespace CSharp
 
             // =====================================================
             // =====================================================
+            // WorkingWithXMPMetadataInEPS
+            // =====================================================
+            // =====================================================
+            //CSharp.WorkingWithXMPMetadataInEPS.GetMetadata.Run();
+            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_ChangeValues.Run();
+            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddSimpleProperties.Run();
+            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddArrayItems.Run();
+            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_ChangeArrayItems.Run();
+            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddNamedValueItem.Run();
+            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_ChangeNamedValueItem.Run();
+            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddNamespace.Run();
+
+            // =====================================================
+            // =====================================================
             // WorkingWithText
             // =====================================================
             // =====================================================
@@ -166,6 +180,11 @@ namespace CSharp
         public static String GetDataDir_WorkingWithDocumentMerging()
         {
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithDocumentMerging/");
+        }
+
+        public static String GetDataDir_WorkingWithXMPMetadataInEPS()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithXMPMetadataInEPS/");
         }
 
         public static string GetDataDir_Data()
