@@ -62,6 +62,7 @@ namespace CSharp
             // =====================================================
             // =====================================================
             //CSharp.WorkingWithXMPMetadataInEPS.GetMetadata.Run();
+            //CSharp.WorkingWithXMPMetadataInEPS.AddMetadata.Run();
             //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_ChangeValues.Run();
             //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddSimpleProperties.Run();
             //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddArrayItems.Run();

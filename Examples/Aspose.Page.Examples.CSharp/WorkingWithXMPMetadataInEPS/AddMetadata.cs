@@ -52,19 +52,12 @@ namespace CSharp.WorkingWithXMPMetadataInEPS
                     Console.WriteLine("MetadataDate: " + xmp["xmp:MetadataDate"].ToStringValue());
 
                 // Save EPS file with new XMP metadata
-                
-                // Create ouput stream
-                System.IO.FileStream outPsStream = new System.IO.FileStream(dataDir + "add_output.eps", System.IO.FileMode.Create, System.IO.FileAccess.Write);
 
-                // Save EPS file
-                try
+                // Create ouput stream
+                using (System.IO.FileStream outPsStream = new System.IO.FileStream(dataDir + "add_output.eps", System.IO.FileMode.Create, System.IO.FileAccess.Write))
                 {
+                    // Save EPS file
                     document.Save(outPsStream);
-                    outPsStream.Flush();
-                }
-                finally
-                {
-                    outPsStream.Close();
                 }
 
             }

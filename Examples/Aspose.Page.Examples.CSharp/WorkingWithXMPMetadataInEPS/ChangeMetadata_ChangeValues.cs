@@ -43,17 +43,10 @@ namespace CSharp.WorkingWithXMPMetadataInEPS
                 // Save EPS file with changed XMP metadata
 
                 // Create ouput stream
-                System.IO.FileStream outPsStream = new System.IO.FileStream(dataDir + "change_values_output.eps", System.IO.FileMode.Create, System.IO.FileAccess.Write);
-
-                // Save EPS file
-                try
+                using (System.IO.FileStream outPsStream = new System.IO.FileStream(dataDir + "change_values_output.eps", System.IO.FileMode.Create, System.IO.FileAccess.Write))
                 {
+                    // Save EPS file
                     document.Save(outPsStream);
-                    outPsStream.Flush();
-                }
-                finally
-                {
-                    outPsStream.Close();
                 }
 
             }
