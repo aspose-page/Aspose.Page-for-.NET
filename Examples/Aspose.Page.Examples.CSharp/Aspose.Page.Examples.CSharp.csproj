@@ -64,6 +64,7 @@
     <Compile Include="WorkingWithDocumentConversion\XPStoPNG.cs" />
     <Compile Include="WorkingWithDocumentConversion\XPStoTIFF.cs" />
     <Compile Include="WorkingWithDocumentMerging\PostScriptToPdf.cs" />
+    <Compile Include="WorkingWithDocumentMerging\XPStoXPS.cs" />
     <Compile Include="WorkingWithDocumentMerging\XPStoPDF.cs" />
     <Compile Include="WorkingWithGradient\AddHorizontalGradient.cs" />
     <Compile Include="WorkingWithGradient\AddLinearGradient.cs" />

@@ -55,6 +55,7 @@ namespace CSharp
             // =====================================================
             //CSharp.WorkingWithDocumentMerging.PostScriptToPdf.Run();
             //CSharp.WorkingWithDocumentMerging.XPStoPDF.Run();
+            //CSharp.WorkingWithDocumentMerging.XPStoXPS.Run();
 
             // =====================================================
             // =====================================================

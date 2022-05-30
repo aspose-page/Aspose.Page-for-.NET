@@ -8,7 +8,7 @@ namespace CSharp.WorkingWithDocumentMerging
         {
             // ExStart:1
             // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_WorkingWithDocumentConversion();
+            string dataDir = RunExamples.GetDataDir_WorkingWithDocumentMerging();
             // Initialize PDF output stream
             using (System.IO.Stream pdfStream = System.IO.File.Open(dataDir + "mergedXPSfiles.pdf", System.IO.FileMode.OpenOrCreate, System.IO.FileAccess.Write))
             // Initialize XPS input stream
