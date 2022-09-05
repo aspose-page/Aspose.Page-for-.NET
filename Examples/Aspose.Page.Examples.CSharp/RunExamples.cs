@@ -173,7 +173,8 @@ namespace CSharp
             //WorkingWithCanvas
             // =====================================================
             // =====================================================
-            Transformations.Run();
+            //Transformations.Run();
+            Clipping.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
