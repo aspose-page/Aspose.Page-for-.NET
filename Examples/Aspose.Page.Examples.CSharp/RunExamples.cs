@@ -11,8 +11,13 @@ using CSharp.WorkingWithText;
 using CSharp.WorkingWithPages;
 using CSharp.WorkingWithTransparency;
 using CSharp.WorkingWithVisualBrush;
+using CSharp.WorkingWithDocument;
 using CSharp.WorkingWithDocumentConversion;
 using CSharp.WorkingWithDocumentMerging;
+using CSharp.WorkingWithPrintTickets;
+using CSharp.WorkingWithCrossPackageOperations;
+using CSharp.WorkingWithImageConversion;
+using CSharp.WorkingWithCanvas;
 
 namespace CSharp
 {
@@ -34,6 +39,14 @@ namespace CSharp
             // LoadLicenseFromStreamObject.Run();
             // SetLicenseUsingEmbeddedResource.Run();
             // SecureLicense.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithDocument
+            // =====================================================
+            // =====================================================
+            //CreateDocument.Run();
+            //ChangeDocument.Run();
 
             // =====================================================
             // =====================================================
@@ -104,6 +117,7 @@ namespace CSharp
             // =====================================================
             //AddRectangle.Run();
             //AddEllipse.Run();
+            ApplyDifferentColorSpaces.Run();
 
             // =====================================================
             // =====================================================
@@ -111,6 +125,17 @@ namespace CSharp
             // =====================================================
             // =====================================================
             //AddPage.Run();
+            //RemovePage.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithPrintTickets
+            // =====================================================
+            // =====================================================
+            //GetPrintTickets.Run();
+            //LinkPrintTickets.Run();
+            //CreateCustomPrintTicket.Run();
+            //EditPrintTicket.Run();
 
             // =====================================================
             // =====================================================
@@ -127,7 +152,28 @@ namespace CSharp
             // =====================================================
             //AddGrid.Run();
 
+            // =====================================================
+            // =====================================================
+            //WorkingWithCrossPackageOperations
+            // =====================================================
+            // =====================================================
+            //AddImageFilledGlyphAndForeignImage.Run();
+            //AddGlyphCloneAndChangeColor.Run();
+            //ManipulatePages.Run();
 
+            // =====================================================
+            // =====================================================
+            //WorkingWithImageConversion
+            // =====================================================
+            // =====================================================
+            //SaveImageAsEPS.Run();
+
+            // =====================================================
+            // =====================================================
+            //WorkingWithCanvas
+            // =====================================================
+            // =====================================================
+            Transformations.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -169,9 +215,18 @@ namespace CSharp
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithPages/");
         }
 
+        public static String GetDataDir_WorkingWithPrintTickets()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithPrintTickets/");
+        }
+
         public static String GetDataDir_WorkingWithTransparency()
         {
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithTransparency/");
+        }
+        public static String GetDataDir_WorkingWithDocument()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithDocument/");
         }
 
         public static String GetDataDir_WorkingWithDocumentConversion()
@@ -187,6 +242,21 @@ namespace CSharp
         public static String GetDataDir_WorkingWithXMPMetadataInEPS()
         {
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithXMPMetadataInEPS/");
+        }
+
+        public static String GetDataDir_WorkingWithCrossPackageOperations()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithCrossPackageOperations/");
+        }
+
+        public static String GetDataDir_WorkingWithImageConversion()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithImageConversion/");
+        }
+
+        public static String GetDataDir_WorkingWithCanvas()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithCanvas/");
         }
 
         public static string GetDataDir_Data()

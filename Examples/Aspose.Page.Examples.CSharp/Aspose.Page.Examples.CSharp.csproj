@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Page, Version=22.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.22.4.0\lib\net452\Aspose.Page.dll</HintPath>
+    <Reference Include="Aspose.Page, Version=22.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.22.8.0\lib\net452\Aspose.Page.dll</HintPath>
     </Reference>
     <Reference Include="DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\..\packages\DotNetZip.1.16.0\lib\net40\DotNetZip.dll</HintPath>
@@ -56,6 +56,10 @@
     <Compile Include="GettingStarted\SetLicenseUsingEmbeddedResource.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkingWithCanvas\Transformations.cs" />
+    <Compile Include="WorkingWithCrossPackageOperations\ManipulatePages.cs" />
+    <Compile Include="WorkingWithCrossPackageOperations\AddGlyphCloneAndChangeColor.cs" />
+    <Compile Include="WorkingWithCrossPackageOperations\AddImageFilledGlyphAndForeignImage.cs" />
     <Compile Include="WorkingWithDocumentConversion\PostScriptToImage.cs" />
     <Compile Include="WorkingWithDocumentConversion\PostScriptToPdf.cs" />
     <Compile Include="WorkingWithDocumentConversion\XPStoBMP.cs" />
@@ -66,13 +70,22 @@
     <Compile Include="WorkingWithDocumentMerging\PostScriptToPdf.cs" />
     <Compile Include="WorkingWithDocumentMerging\XPStoXPS.cs" />
     <Compile Include="WorkingWithDocumentMerging\XPStoPDF.cs" />
+    <Compile Include="WorkingWithDocument\ChangeDocument.cs" />
+    <Compile Include="WorkingWithDocument\CreateDocument.cs" />
     <Compile Include="WorkingWithGradient\AddHorizontalGradient.cs" />
     <Compile Include="WorkingWithGradient\AddLinearGradient.cs" />
     <Compile Include="WorkingWithGradient\AddVerticalGradient.cs" />
+    <Compile Include="WorkingWithImageConversion\SaveImageAsEPS.cs" />
     <Compile Include="WorkingWithImages\AddImage.cs" />
     <Compile Include="WorkingWithImages\AddTiledImage.cs" />
+    <Compile Include="WorkingWithPages\RemovePage.cs" />
     <Compile Include="WorkingWithPages\AddPage.cs" />
+    <Compile Include="WorkingWithPrintTickets\CreateCustomPrintTicket.cs" />
+    <Compile Include="WorkingWithPrintTickets\EditPrintTicket.cs" />
+    <Compile Include="WorkingWithPrintTickets\LinkPrintTickets.cs" />
+    <Compile Include="WorkingWithPrintTickets\GetPrintTickets.cs" />
     <Compile Include="WorkingWithShapes\AddEllipse.cs" />
+    <Compile Include="WorkingWithShapes\ApplyDifferentColorSpaces.cs" />
     <Compile Include="WorkingWithShapes\AddRectangle.cs" />
     <Compile Include="WorkingWithText\AddText.cs" />
     <Compile Include="WorkingWithText\AddTextUsingUnicodeString.cs" />
@@ -93,5 +106,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
