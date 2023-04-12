@@ -45,8 +45,9 @@ namespace CSharp
             // WorkingWithDocument
             // =====================================================
             // =====================================================
-            //CreateDocument.Run();
-            //ChangeDocument.Run();
+            //CreateDocumentXPS.Run();
+            //ChangeDocumentXPS.Run();
+            //CreateDocumentPS.Run();
 
             // =====================================================
             // =====================================================
@@ -90,42 +91,68 @@ namespace CSharp
             // WorkingWithText
             // =====================================================
             // =====================================================
-            //AddText.Run();
-            //AddTextUsingUnicodeString.Run();
+            //AddTextXPS.Run();
+            //AddTextUsingUnicodeStringXPS.Run();
+            //AddTextPS.Run();
+            //AddTextUsingUnicodeStringPS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithImages
             // =====================================================
             // =====================================================
-            //AddImage.Run();
-            //AddTiledImage.Run();
+            //AddImageXPS.Run();
+            //AddTiledImageXPS.Run();
+            //AddImagePS.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithTextures
+            // =====================================================
+            // =====================================================
+            //AddTextureTilingPatternPS.Run();
+
+            // =====================================================
+            // =====================================================
+            // WorkingWithHatchPattern
+            // =====================================================
+            // =====================================================
+            //AddHatchPatternPS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithGradient
             // =====================================================
             // =====================================================
-            //AddLinearGradient.Run();
-            //AddVerticalGradient.Run();
-            //AddHorizontalGradient.Run();
+            //AddDiagonalGradientXPS.Run();
+            //AddVerticalGradientXPS.Run();
+            //AddHorizontalGradientXPS.Run();
+            //AddHorizontalGradientPS.Run();
+            //AddVerticalGradientPS.Run();
+            //AddDiagonalGradientPS.Run();
+            //AddRadialGradient1PS.Run();
+            //AddRadialGradient2PS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithShapes
             // =====================================================
             // =====================================================
-            //AddRectangle.Run();
-            //AddEllipse.Run();
-            ApplyDifferentColorSpaces.Run();
+            //AddRectangleXPS.Run();
+            //AddEllipseXPS.Run();
+            //ApplyDifferentColorSpacesXPS.Run();
+            //AddEllipsePS.Run();
+            //AddRectanglePS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithPages
             // =====================================================
             // =====================================================
-            //AddPage.Run();
-            //RemovePage.Run();
+            //AddPageXPS.Run();
+            //RemovePageXPS.Run();
+            //AddPage1PS.Run();
+            //AddPage2PS.Run();
 
             // =====================================================
             // =====================================================
@@ -142,8 +169,10 @@ namespace CSharp
             // WorkingWithTransparency
             // =====================================================
             // =====================================================
-            //AddTransparentObject.Run();
-            //SetOpacityMask.Run();
+            //AddTransparentObjectXPS.Run();
+            //SetOpacityMaskXPS.Run();
+            //ShowPseudoTransparencyPS.Run();
+            //AddTransparentImagePS.Run();
 
             // =====================================================
             // =====================================================
@@ -173,8 +202,10 @@ namespace CSharp
             //WorkingWithCanvas
             // =====================================================
             // =====================================================
-            //Transformations.Run();
-            Clipping.Run();
+            //TransformationsXPS.Run();
+            //ClippingXPS.Run();
+            //TransformationsPS.Run();
+            //ClippingPS.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -199,6 +230,11 @@ namespace CSharp
         public static String GetDataDir_WorkingWithImages()
         {
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithImages/");
+        }
+
+        public static String GetDataDir_WorkingWithTextures()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithTextures/");
         }
 
         public static String GetDataDir_WorkingWithShapes()
@@ -258,6 +294,11 @@ namespace CSharp
         public static String GetDataDir_WorkingWithCanvas()
         {
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithCanvas/");
+        }
+
+        public static String GetDataDir_WorkingWithHatches()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithHatches/");
         }
 
         public static string GetDataDir_Data()

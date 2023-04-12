@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Page, Version=22.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.22.8.0\lib\net452\Aspose.Page.dll</HintPath>
+    <Reference Include="Aspose.Page">
+      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.23.3.0\lib\net4.0\Aspose.Page.dll</HintPath>
     </Reference>
     <Reference Include="DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\..\packages\DotNetZip.1.16.0\lib\net40\DotNetZip.dll</HintPath>
@@ -56,11 +56,14 @@
     <Compile Include="GettingStarted\SetLicenseUsingEmbeddedResource.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WorkingWithCanvas\Clipping.cs" />
-    <Compile Include="WorkingWithCanvas\Transformations.cs" />
+    <Compile Include="WorkingWithCanvas\ClippingPS.cs" />
+    <Compile Include="WorkingWithCanvas\TransformationsPS.cs" />
+    <Compile Include="WorkingWithCanvas\ClippingXPS.cs" />
+    <Compile Include="WorkingWithCanvas\TransformationsXPS.cs" />
     <Compile Include="WorkingWithCrossPackageOperations\ManipulatePages.cs" />
     <Compile Include="WorkingWithCrossPackageOperations\AddGlyphCloneAndChangeColor.cs" />
     <Compile Include="WorkingWithCrossPackageOperations\AddImageFilledGlyphAndForeignImage.cs" />
+    <Compile Include="WorkingWithDocument\CreateDocumentPS.cs" />
     <Compile Include="WorkingWithDocumentConversion\PostScriptToImage.cs" />
     <Compile Include="WorkingWithDocumentConversion\PostScriptToPdf.cs" />
     <Compile Include="WorkingWithDocumentConversion\XPStoBMP.cs" />
@@ -71,27 +74,43 @@
     <Compile Include="WorkingWithDocumentMerging\PostScriptToPdf.cs" />
     <Compile Include="WorkingWithDocumentMerging\XPStoXPS.cs" />
     <Compile Include="WorkingWithDocumentMerging\XPStoPDF.cs" />
-    <Compile Include="WorkingWithDocument\ChangeDocument.cs" />
-    <Compile Include="WorkingWithDocument\CreateDocument.cs" />
-    <Compile Include="WorkingWithGradient\AddHorizontalGradient.cs" />
-    <Compile Include="WorkingWithGradient\AddLinearGradient.cs" />
-    <Compile Include="WorkingWithGradient\AddVerticalGradient.cs" />
+    <Compile Include="WorkingWithDocument\ChangeDocumentXPS.cs" />
+    <Compile Include="WorkingWithDocument\CreateDocumentXPS.cs" />
+    <Compile Include="WorkingWithGradient\AddDiagonalGradientPS.cs" />
+    <Compile Include="WorkingWithGradient\AddHorizontalGradientXPS.cs" />
+    <Compile Include="WorkingWithGradient\AddHorizontalGradientPS.cs" />
+    <Compile Include="WorkingWithGradient\AddRadialGradient2PS.cs" />
+    <Compile Include="WorkingWithGradient\AddRadialGradient1PS.cs" />
+    <Compile Include="WorkingWithGradient\AddVerticalGradientPS.cs" />
+    <Compile Include="WorkingWithGradient\AddDiagonalGradientXPS.cs" />
+    <Compile Include="WorkingWithGradient\AddVerticalGradientXPS.cs" />
+    <Compile Include="WorkingWithHatches\AddHatchPatternPS.cs" />
     <Compile Include="WorkingWithImageConversion\SaveImageAsEPS.cs" />
-    <Compile Include="WorkingWithImages\AddImage.cs" />
-    <Compile Include="WorkingWithImages\AddTiledImage.cs" />
-    <Compile Include="WorkingWithPages\RemovePage.cs" />
-    <Compile Include="WorkingWithPages\AddPage.cs" />
+    <Compile Include="WorkingWithImages\AddImageXPS.cs" />
+    <Compile Include="WorkingWithImages\AddImagePS.cs" />
+    <Compile Include="WorkingWithImages\AddTiledImageXPS.cs" />
+    <Compile Include="WorkingWithPages\AddPage2PS.cs" />
+    <Compile Include="WorkingWithPages\AddPage1PS.cs" />
+    <Compile Include="WorkingWithPages\RemovePageXPS.cs" />
+    <Compile Include="WorkingWithPages\AddPageXPS.cs" />
     <Compile Include="WorkingWithPrintTickets\CreateCustomPrintTicket.cs" />
     <Compile Include="WorkingWithPrintTickets\EditPrintTicket.cs" />
     <Compile Include="WorkingWithPrintTickets\LinkPrintTickets.cs" />
     <Compile Include="WorkingWithPrintTickets\GetPrintTickets.cs" />
-    <Compile Include="WorkingWithShapes\AddEllipse.cs" />
-    <Compile Include="WorkingWithShapes\ApplyDifferentColorSpaces.cs" />
-    <Compile Include="WorkingWithShapes\AddRectangle.cs" />
-    <Compile Include="WorkingWithText\AddText.cs" />
-    <Compile Include="WorkingWithText\AddTextUsingUnicodeString.cs" />
-    <Compile Include="WorkingWithTransparency\AddTransparentObject.cs" />
-    <Compile Include="WorkingWithTransparency\SetOpacityMask.cs" />
+    <Compile Include="WorkingWithShapes\AddRectanglePS.cs" />
+    <Compile Include="WorkingWithShapes\AddEllipsePS.cs" />
+    <Compile Include="WorkingWithShapes\AddEllipseXPS.cs" />
+    <Compile Include="WorkingWithShapes\ApplyDifferentColorSpacesXPS.cs" />
+    <Compile Include="WorkingWithShapes\AddRectangleXPS.cs" />
+    <Compile Include="WorkingWithTexture\AddTextureTilingPatternPS.cs" />
+    <Compile Include="WorkingWithText\AddTextUsingUnicodeStringPS.cs" />
+    <Compile Include="WorkingWithText\AddTextPS.cs" />
+    <Compile Include="WorkingWithText\AddTextXPS.cs" />
+    <Compile Include="WorkingWithText\AddTextUsingUnicodeStringXPS.cs" />
+    <Compile Include="WorkingWithTransparency\AddTransparentImagePS.cs" />
+    <Compile Include="WorkingWithTransparency\ShowPseudoTransparencyPS.cs" />
+    <Compile Include="WorkingWithTransparency\AddTransparentObjectXPS.cs" />
+    <Compile Include="WorkingWithTransparency\SetOpacityMaskXPS.cs" />
     <Compile Include="WorkingWithVisualBrush\AddGrid.cs" />
     <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_AddNamespace.cs" />
     <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_AddNamedValueItem.cs" />
