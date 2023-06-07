@@ -31,11 +31,11 @@ namespace CSharp.WorkingWithTransparency
 
 ///////////////////////////////// Create rectangle with opaque gradient fill /////////////////////////////////////////////////////////
                 System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
-                path.AddRectangle(new System.Drawing.RectangleF(50, 100, 200, 100));
+                path.AddRectangle(new System.Drawing.RectangleF(offsetX, offsetY, width, height));
 
                 LinearGradientBrush opaqueBrush = new LinearGradientBrush(new RectangleF(0, 0, 200, 100), Color.FromArgb(0, 0, 0),
                     Color.FromArgb(40, 128, 70), 0f);
-                System.Drawing.Drawing2D.Matrix brushTransform = new System.Drawing.Drawing2D.Matrix(200, 0, 0, 100, 50, 100);
+                System.Drawing.Drawing2D.Matrix brushTransform = new System.Drawing.Drawing2D.Matrix(width, 0, 0, height, offsetX, offsetY);
                 opaqueBrush.Transform = brushTransform;
                 Aspose.Page.EPS.GradientBrush gradientBrush = new GradientBrush(opaqueBrush);
                 gradientBrush.WrapMode = WrapMode.Clamp;

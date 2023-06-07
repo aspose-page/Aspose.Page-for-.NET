@@ -19,7 +19,7 @@ namespace CSharp.WorkingWithText
             glyphs.BidiLevel = 1;
             glyphs.Fill = textFill;
             // Save resultant XPS document
-            doc.Save(dataDir + "AddText_out.xps");
+            doc.Save(dataDir + "AddTextRTL_out.xps");
             // ExEnd:1
         }
     }
