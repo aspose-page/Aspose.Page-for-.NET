@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GettingStarted\ApplyMeteredLicense.cs" />
     <Compile Include="GettingStarted\LoadLicenseFromFile.cs" />
     <Compile Include="GettingStarted\LoadLicenseFromStreamObject.cs" />
     <Compile Include="GettingStarted\SecureLicense.cs" />

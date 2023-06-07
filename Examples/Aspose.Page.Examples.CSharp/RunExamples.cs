@@ -35,7 +35,8 @@ namespace CSharp
             // Getting Started
             // =====================================================
             // =====================================================
-            LoadLicenseFromFile.Run();
+            //LoadLicenseFromFile.Run();
+            ApplyMeteredLicense.Run();
             // LoadLicenseFromStreamObject.Run();
             // SetLicenseUsingEmbeddedResource.Run();
             // SecureLicense.Run();
