@@ -18,6 +18,7 @@ using CSharp.WorkingWithPrintTickets;
 using CSharp.WorkingWithCrossPackageOperations;
 using CSharp.WorkingWithImageConversion;
 using CSharp.WorkingWithCanvas;
+using CSharp.WorkingWithEPS;
 
 namespace CSharp
 {
@@ -36,7 +37,7 @@ namespace CSharp
             // =====================================================
             // =====================================================
             //LoadLicenseFromFile.Run();
-            ApplyMeteredLicense.Run();
+            //ApplyMeteredLicense.Run();
             // LoadLicenseFromStreamObject.Run();
             // SetLicenseUsingEmbeddedResource.Run();
             // SecureLicense.Run();
@@ -200,6 +201,17 @@ namespace CSharp
 
             // =====================================================
             // =====================================================
+            //ResizeEPS
+            // =====================================================
+            // =====================================================
+            //ResizeEPS.RunPoints();
+            //ResizeEPS.RunInches();
+            //ResizeEPS.RunMms();
+            //ResizeEPS.RunPercents();
+            CropEPS.Run();
+
+            // =====================================================
+            // =====================================================
             //WorkingWithCanvas
             // =====================================================
             // =====================================================
@@ -282,6 +294,11 @@ namespace CSharp
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithXMPMetadataInEPS/");
         }
 
+        public static String GetDataDir_WorkingWithEPS()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithEPS/");
+        }
+
         public static String GetDataDir_WorkingWithCrossPackageOperations()
         {
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithCrossPackageOperations/");
@@ -301,6 +318,7 @@ namespace CSharp
         {
             return Path.GetFullPath(GetDataDir_Data() + "WorkingWithHatches/");
         }
+
 
         public static string GetDataDir_Data()
         {

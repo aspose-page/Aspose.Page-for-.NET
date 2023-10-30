@@ -29,12 +29,6 @@ namespace CSharp.GettingStarted
             PsDocument document = new PsDocument(psStream);
             //Create Image device for converting EPS file to PNG image
             ImageDevice device = new ImageDevice();
-            //check if device is licensed
-            if (device.IsLicensed)
-                Console.WriteLine("Metered License is set successfully.");
-            else
-                Console.WriteLine("Metered License is not set.");
-            
             //Save EPS file as image
             document.Save(device, new ImageSaveOptions());
             //Get images bytes. One bytes array for one page. In our case we have one page.
