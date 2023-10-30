@@ -32,7 +32,7 @@ namespace CSharp.WorkingWithEPS
                 using (Stream outputEpsStream = new System.IO.FileStream(dataDir + "output_crop.eps", System.IO.FileMode.Create, System.IO.FileAccess.Write))
                 {
                     //Create new bounding box
-                    //Bounding box is represented by 4 numbers x0, y0, x, y, where x0 - left margin, y0 - top margin, x - (x0 + width), y - (y0 + height)
+                    //Bounding box is represented by 4 numbers: x0, y0, x, y, where x0 - left margin, y0 - top margin, x - (x0 + width), y - (y0 + height)
                     float[] newBoundingBox = new float[] { 260, 300, 480, 432 };
 
                     //Crop EPS image and save to the output stream                    
