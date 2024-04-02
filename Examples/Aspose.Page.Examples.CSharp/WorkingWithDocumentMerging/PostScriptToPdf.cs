@@ -15,7 +15,7 @@ namespace CSharp.WorkingWithDocumentMerging
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WorkingWithDocumentMerging();
             
-            // Initialize the first PostScript file
+            // Initialize PS document with the first PostScript file
             PsDocument document = new PsDocument(dataDir + "input.ps");
 
             // Create an array of PostScript files that will be merged with the first one
