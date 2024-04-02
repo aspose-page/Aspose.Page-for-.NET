@@ -13,7 +13,7 @@ using CSharp.WorkingWithTransparency;
 using CSharp.WorkingWithVisualBrush;
 using CSharp.WorkingWithDocument;
 using CSharp.WorkingWithDocumentConversion;
-using CSharp.WorkingWithDocumentMerging;
+//using CSharp.WorkingWithDocumentMerging;
 using CSharp.WorkingWithPrintTickets;
 using CSharp.WorkingWithCrossPackageOperations;
 using CSharp.WorkingWithImageConversion;
@@ -36,7 +36,7 @@ namespace CSharp
             // Getting Started
             // =====================================================
             // =====================================================
-            //LoadLicenseFromFile.Run();
+            LoadLicenseFromFile.Run();
             //ApplyMeteredLicense.Run();
             // LoadLicenseFromStreamObject.Run();
             // SetLicenseUsingEmbeddedResource.Run();
@@ -208,7 +208,7 @@ namespace CSharp
             //ResizeEPS.RunInches();
             //ResizeEPS.RunMms();
             //ResizeEPS.RunPercents();
-            CropEPS.Run();
+            //CropEPS.Run();
 
             // =====================================================
             // =====================================================
@@ -227,96 +227,96 @@ namespace CSharp
 
         public static String GetDataDir_GettingStarted()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "GettingStarted/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "GettingStarted/");
         }
 
         public static String GetDataDir_WorkingWithGradient()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithGradient/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithGradient/");
         }
 
         public static String GetDataDir_WorkingWithVisualBrush()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithVisualBrush/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithVisualBrush/");
         }
 
         public static String GetDataDir_WorkingWithImages()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithImages/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithImages/");
         }
 
         public static String GetDataDir_WorkingWithTextures()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithTextures/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithTextures/");
         }
 
         public static String GetDataDir_WorkingWithShapes()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithShapes/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithShapes/");
         }
 
         public static String GetDataDir_WorkingWithText()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithText/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithText/");
         }
 
         public static String GetDataDir_WorkingWithPages()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithPages/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithPages/");
         }
 
         public static String GetDataDir_WorkingWithPrintTickets()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithPrintTickets/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithPrintTickets/");
         }
 
         public static String GetDataDir_WorkingWithTransparency()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithTransparency/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithTransparency/");
         }
         public static String GetDataDir_WorkingWithDocument()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithDocument/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithDocument/");
         }
 
         public static String GetDataDir_WorkingWithDocumentConversion()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithDocumentConversion/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithDocumentConversion/");
         }
 
         public static String GetDataDir_WorkingWithDocumentMerging()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithDocumentMerging/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithDocumentMerging/");
         }
 
         public static String GetDataDir_WorkingWithXMPMetadataInEPS()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithXMPMetadataInEPS/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithXMPMetadataInEPS/");
         }
 
         public static String GetDataDir_WorkingWithEPS()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithEPS/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithEPS/");
         }
 
         public static String GetDataDir_WorkingWithCrossPackageOperations()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithCrossPackageOperations/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithCrossPackageOperations/");
         }
 
         public static String GetDataDir_WorkingWithImageConversion()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithImageConversion/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithImageConversion/");
         }
 
         public static String GetDataDir_WorkingWithCanvas()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithCanvas/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithCanvas/");
         }
 
         public static String GetDataDir_WorkingWithHatches()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "WorkingWithHatches/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithHatches/");
         }
 
 

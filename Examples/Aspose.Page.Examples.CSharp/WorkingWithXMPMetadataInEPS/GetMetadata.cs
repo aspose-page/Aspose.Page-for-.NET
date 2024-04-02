@@ -38,7 +38,7 @@ namespace CSharp.WorkingWithXMPMetadataInEPS
                 {
                     XmpValue val = xmp["xmp:Thumbnails"].ToArray()[0];
                     if (val.IsNamedValues && val.ToDictionary().ContainsKey("xmpGImg:width"))
-                        Console.WriteLine("Thumbnail Width: " + val.ToDictionary()["xmpGImg:width"].ToInteger());
+                        Console.WriteLine($"Thumbnail Width: {val.ToDictionary()["xmpGImg:width"].ToInteger()}");
                 }
 
                 // Get "format" value
