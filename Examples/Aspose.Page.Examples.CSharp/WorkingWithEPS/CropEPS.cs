@@ -1,13 +1,11 @@
 ﻿using Aspose.Page;
 using Aspose.Page.EPS;
-using Aspose.Page.EPS.Device;
-using Aspose.Page.EPS.XMP;
-using System;
-using System.Collections.Generic;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+#else
 using System.Drawing;
+#endif
 using System.IO;
-using System.Linq;
-using System.Text;
 
 namespace CSharp.WorkingWithEPS
 {

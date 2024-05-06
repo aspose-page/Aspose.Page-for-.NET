@@ -1,7 +1,12 @@
 ﻿using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 using System.IO;
 
 namespace CSharp.WorkingWithTransparency
@@ -33,14 +38,14 @@ namespace CSharp.WorkingWithTransparency
                 using (Bitmap image = new Bitmap(dataDir + "mask1.png"))
                 {
                     //Add this image to document as usual opaque RGB image
-                    document.DrawImage(image, new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 100, 0), Color.Empty);
+                    document.DrawImage(image, new Matrix(1, 0, 0, 1, 100, 0), Color.Empty);
                 }
 
                 //Again create bitmap from the same image file
                 using (Bitmap image = new Bitmap(dataDir + "mask1.png"))
                 {
                     //Add this image to document as transparent image image
-                    document.DrawTransparentImage(image, new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 350, 0), 255);
+                    document.DrawTransparentImage(image, new Matrix(1, 0, 0, 1, 350, 0), 255);
                 }
 
                 document.WriteGraphicsRestore();

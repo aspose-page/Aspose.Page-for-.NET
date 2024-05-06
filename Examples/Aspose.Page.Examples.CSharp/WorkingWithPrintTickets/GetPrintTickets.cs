@@ -2,7 +2,6 @@
 using Aspose.Page.XPS.XpsMetadata;
 using Aspose.Page.XPS.XpsModel;
 using System;
-using System.Drawing;
 
 namespace CSharp.WorkingWithPrintTickets
 {

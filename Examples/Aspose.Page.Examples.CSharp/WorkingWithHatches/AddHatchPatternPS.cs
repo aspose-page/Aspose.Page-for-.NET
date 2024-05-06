@@ -1,7 +1,12 @@
 ﻿using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 using System.IO;
 
 namespace CSharp.WorkingWithShapes
@@ -36,8 +41,8 @@ namespace CSharp.WorkingWithShapes
                 document.Translate(x0, y0);
 
                 //Create rectngle path for every pattern square
-                System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
-                path.AddRectangle(new System.Drawing.RectangleF(0, 0, squareSide, squareSide));
+                GraphicsPath path = new GraphicsPath();
+                path.AddRectangle(new RectangleF(0, 0, squareSide, squareSide));
 
                 //Create pen for outlining pattern square
                 Pen pen = new Pen(Color.Black, 2);
@@ -79,7 +84,7 @@ namespace CSharp.WorkingWithShapes
 
                 //Fill text with hatch pattern
                 HatchBrush brush = new HatchBrush(HatchStyle.DiagonalCross, Color.Red, Color.Yellow);
-                System.Drawing.Font font = new System.Drawing.Font("Arial", 96, FontStyle.Bold);
+                Font font = new Font("Arial", 96, FontStyle.Bold);
                 document.FillAndStrokeText("ABC", font, 200, 300, brush, pen);
 
                 //Outline text with hatch pattern

@@ -1,10 +1,6 @@
-﻿using Aspose.Page.EPS;
-using Aspose.Page.EPS.Device;
+﻿using System;
+using Aspose.Page.EPS;
 using Aspose.Page.EPS.XMP;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace CSharp.WorkingWithXMPMetadataInEPS
 {

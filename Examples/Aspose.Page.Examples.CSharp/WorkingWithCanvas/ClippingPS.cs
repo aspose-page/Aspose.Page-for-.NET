@@ -1,7 +1,12 @@
 ﻿using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 using System.IO;
 
 namespace CSharp.WorkingWithCanvas
@@ -24,8 +29,8 @@ namespace CSharp.WorkingWithCanvas
                 PsDocument document = new PsDocument(outPsStream, options, false);
 
                 //Create graphics path from the rectangle
-                System.Drawing.Drawing2D.GraphicsPath rectangePath = new System.Drawing.Drawing2D.GraphicsPath();
-                rectangePath.AddRectangle(new System.Drawing.RectangleF(0, 0, 300, 200));
+                GraphicsPath rectangePath = new GraphicsPath();
+                rectangePath.AddRectangle(new RectangleF(0, 0, 300, 200));
 
 ////////////////////////////////////// Clipping by shape //////////////////////////////////////////////////////////////////////
 
@@ -36,14 +41,14 @@ namespace CSharp.WorkingWithCanvas
                 document.Translate(100, 100);
 
                 //Create graphics path from the circle
-                System.Drawing.Drawing2D.GraphicsPath circlePath = new System.Drawing.Drawing2D.GraphicsPath();
-                circlePath.AddEllipse(new System.Drawing.RectangleF(50, 0, 200, 200));
+                GraphicsPath circlePath = new GraphicsPath();
+                circlePath.AddEllipse(new RectangleF(50, 0, 200, 200));
 
                 //Add clipping by circle to the current graphics state
                 document.Clip(circlePath);
 
                 //Set paint in the current graphics state
-                document.SetPaint(new System.Drawing.SolidBrush(Color.Blue));
+                document.SetPaint(new SolidBrush(Color.Blue));
 
                 //Fill the rectangle in the current graphics state (with clipping)
                 document.Fill(rectangePath);

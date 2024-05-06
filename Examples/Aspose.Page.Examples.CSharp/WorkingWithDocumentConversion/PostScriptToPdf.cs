@@ -31,6 +31,7 @@ namespace CSharp.WorkingWithDocumentConversion
             // or
             //saveOptions.Size = new Aspose.Page.Drawing.Size(595x842);
 
+            // Save document as PDF
             document.SaveAsPdf(dataDir + "outputPDF_out.pdf", options);
 
             //Review errors

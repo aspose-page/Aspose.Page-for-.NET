@@ -1,6 +1,5 @@
 ﻿using Aspose.Page.XPS;
 using Aspose.Page.XPS.XpsModel;
-using System.Drawing;
 
 
 namespace CSharp.WorkingWithShapes

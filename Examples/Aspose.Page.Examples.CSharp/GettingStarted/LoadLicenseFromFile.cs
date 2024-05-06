@@ -17,6 +17,7 @@ namespace CSharp.GettingStarted
             License license = new License();
             // Set license
             license.SetLicense(/*"D:\\Aspose.Total.NET.lic"*/"D:\\Aspose.Page.NET.lic");
+            //license.SetLicense(/*"D:\\Aspose.Total.NET.lic"*/"/root/Aspose/Aspose.Page.NET.lic");
             Console.WriteLine("License set successfully.");
             // ExEnd:1
         }

@@ -2,8 +2,13 @@
 using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
 using Aspose.Page.Font;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 using System.IO;
 
 namespace CSharp.WorkingWithText

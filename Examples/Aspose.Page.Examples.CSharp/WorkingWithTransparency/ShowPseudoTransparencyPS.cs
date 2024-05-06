@@ -1,7 +1,14 @@
 ﻿using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+using GradientBrush = Aspose.Page.Drawing.Drawing2D.GradientBrush;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using GradientBrush = Aspose.Page.EPS.GradientBrush;
+#endif
 using System.IO;
 
 
@@ -30,14 +37,14 @@ namespace CSharp.WorkingWithTransparency
                 float height = 100;
 
 ///////////////////////////////// Create rectangle with opaque gradient fill /////////////////////////////////////////////////////////
-                System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
-                path.AddRectangle(new System.Drawing.RectangleF(offsetX, offsetY, width, height));
+                GraphicsPath path = new GraphicsPath();
+                path.AddRectangle(new RectangleF(offsetX, offsetY, width, height));
 
                 LinearGradientBrush opaqueBrush = new LinearGradientBrush(new RectangleF(0, 0, 200, 100), Color.FromArgb(0, 0, 0),
                     Color.FromArgb(40, 128, 70), 0f);
-                System.Drawing.Drawing2D.Matrix brushTransform = new System.Drawing.Drawing2D.Matrix(width, 0, 0, height, offsetX, offsetY);
+                Matrix brushTransform = new Matrix(width, 0, 0, height, offsetX, offsetY);
                 opaqueBrush.Transform = brushTransform;
-                Aspose.Page.EPS.GradientBrush gradientBrush = new GradientBrush(opaqueBrush);
+                GradientBrush gradientBrush = new GradientBrush(opaqueBrush);
                 gradientBrush.WrapMode = WrapMode.Clamp;
 
                 document.SetPaint(gradientBrush);
@@ -48,18 +55,18 @@ namespace CSharp.WorkingWithTransparency
 
 ///////////////////////////////// Create rectangle with translucent gradient fill ///////////////////////////////////////////////////
                 //Create graphics path from the first rectangle
-                path = new System.Drawing.Drawing2D.GraphicsPath();
-                path.AddRectangle(new System.Drawing.RectangleF(offsetX, offsetY, width, height));
+                path = new GraphicsPath();
+                path.AddRectangle(new RectangleF(offsetX, offsetY, width, height));
 
                 //Create linear gradient brush colors which transparency are not 255, but 150 and 50. So it are translucent.
                 LinearGradientBrush translucentBrush = new LinearGradientBrush(new RectangleF(0, 0, width, height), Color.FromArgb(150, 0, 0, 0),
                     Color.FromArgb(50, 40, 128, 70), 0f);
                 //Create a transform for brush.
-                brushTransform = new System.Drawing.Drawing2D.Matrix(width, 0, 0, height, offsetX, offsetY);
+                brushTransform = new Matrix(width, 0, 0, height, offsetX, offsetY);
                 //Set transform
                 translucentBrush.Transform = brushTransform;
                 //Create GradientBrush object containing the linear gradient brush
-                gradientBrush = new Aspose.Page.EPS.GradientBrush(translucentBrush);
+                gradientBrush = new GradientBrush(translucentBrush);
                 gradientBrush.WrapMode = WrapMode.Clamp;
                 //Set paint
                 document.SetPaint(gradientBrush);

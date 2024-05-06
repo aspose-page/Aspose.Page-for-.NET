@@ -1,7 +1,5 @@
 ﻿using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.IO;
 
 namespace CSharp.WorkingWithPages

@@ -1,7 +1,12 @@
 ﻿using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 using System.IO;
 
 namespace CSharp.WorkingWithShapes
@@ -34,7 +39,7 @@ namespace CSharp.WorkingWithShapes
                     TextureBrush brush = new TextureBrush(image, WrapMode.Tile);
 
                     //Add scaling in X direction to the mattern
-                    System.Drawing.Drawing2D.Matrix transform = new System.Drawing.Drawing2D.Matrix(2, 0, 0, 1, 0, 0);
+                    Matrix transform = new Matrix(2, 0, 0, 1, 0, 0);
                     brush.Transform = transform;
 
                     //Set this texture brush as current paint
@@ -42,8 +47,8 @@ namespace CSharp.WorkingWithShapes
                 }
 
                 //Create rectangle path
-                System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
-                path.AddRectangle(new System.Drawing.RectangleF(0, 0, 200, 100));
+                GraphicsPath path = new GraphicsPath();
+                path.AddRectangle(new RectangleF(0, 0, 200, 100));
 
                 //Fill rectangle
                 document.Fill(path);
@@ -59,7 +64,7 @@ namespace CSharp.WorkingWithShapes
                 document.WriteGraphicsRestore();
 
                 //Fill text with texture pattern                
-                System.Drawing.Font font = new System.Drawing.Font("Arial", 96, FontStyle.Bold);
+                Font font = new Font("Arial", 96, FontStyle.Bold);
                 document.FillAndStrokeText("ABC", font, 200, 300, paint, new Pen(Color.Black, 2));
 
                 //Outline text with texture pattern

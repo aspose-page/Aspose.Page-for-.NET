@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Page.Drawing.Cire.3.1.Examples.CSharp", "Aspose.Page.Examples.CSharp\Aspose.Page.Drawing.Core.3.1.Examples.CSharp.csproj", "{68669EB2-4F4A-4C7E-8543-C8A4F51860E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68669EB2-4F4A-4C7E-8543-C8A4F51860E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68669EB2-4F4A-4C7E-8543-C8A4F51860E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68669EB2-4F4A-4C7E-8543-C8A4F51860E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68669EB2-4F4A-4C7E-8543-C8A4F51860E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA1FEED2-17DC-4B15-A99D-0A055194515B}
+	EndGlobalSection
+EndGlobal

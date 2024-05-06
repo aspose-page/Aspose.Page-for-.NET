@@ -59,6 +59,7 @@ namespace CSharp.WorkingWithCanvas
             // Translate this canvas to position new rectangle below previous rectnagle
             canvas5.RenderTransform = doc.CreateMatrix(1, 0, 0, 1, 0, 800);
             // Rotate this canvas aroud a point on 45 degrees
+
             canvas5.RenderTransform.RotateAround(45, new PointF(100, 50));
             rect = canvas5.AddPath(rectGeom);
             rect.Fill = fill;

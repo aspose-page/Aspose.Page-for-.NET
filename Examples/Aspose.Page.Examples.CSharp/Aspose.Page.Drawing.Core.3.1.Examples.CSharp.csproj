@@ -1,0 +1,106 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefineConstants>ASPOSE_DRAWING;</DefineConstants>
+  </PropertyGroup>
+  <!--ItemGroup>
+  	<Reference Include="Aspose.Page.Drawing">
+      <HintPath>lib\netstandard2.0\Aspose.Page.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetZip.NetStandard">
+      <HintPath>lib\netstandard2.0\DotNetZip.dll</HintPath>
+    </Reference>
+  </ItemGroup-->
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.3" />
+    <PackageReference Include="DotNetZip.NetStandard" Version="1.12.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.1" />
+  </ItemGroup>
+  <ItemGroup>
+  	<PackageReference Include="Aspose.Page.Drawing" Version="24.4.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GettingStarted\ApplyMeteredLicense.cs" />
+    <Compile Include="GettingStarted\LoadLicenseFromFile.cs" />
+    <Compile Include="GettingStarted\LoadLicenseFromStreamObject.cs" />
+    <Compile Include="GettingStarted\SecureLicense.cs" />
+    <Compile Include="GettingStarted\SetLicenseUsingEmbeddedResource.cs" />
+    <Compile Include="RunExamples.cs" />
+    <Compile Include="WorkingWithCanvas\ClippingPS.cs" />
+    <Compile Include="WorkingWithCanvas\TransformationsPS.cs" />
+    <Compile Include="WorkingWithCanvas\ClippingXPS.cs" />
+    <Compile Include="WorkingWithCanvas\TransformationsXPS.cs" />
+    <Compile Include="WorkingWithCrossPackageOperations\ManipulatePages.cs" />
+    <Compile Include="WorkingWithCrossPackageOperations\AddGlyphCloneAndChangeColor.cs" />
+    <Compile Include="WorkingWithCrossPackageOperations\AddImageFilledGlyphAndForeignImage.cs" />
+    <Compile Include="WorkingWithDocument\CreateDocumentPS.cs" />
+    <Compile Include="WorkingWithDocumentConversion\PostScriptToImage.cs" />
+    <Compile Include="WorkingWithDocumentConversion\PostScriptToPdf.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoBMP.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoJPEG.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoPDF.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoPNG.cs" />
+    <Compile Include="WorkingWithDocumentConversion\XPStoTIFF.cs" />
+    <Compile Include="WorkingWithDocumentMerging\PostScriptToPdf.cs" />
+    <Compile Include="WorkingWithDocumentMerging\XPStoXPS.cs" />
+    <Compile Include="WorkingWithDocumentMerging\XPStoPDF.cs" />
+    <Compile Include="WorkingWithDocument\ChangeDocumentXPS.cs" />
+    <Compile Include="WorkingWithDocument\CreateDocumentXPS.cs" />
+    <Compile Include="WorkingWithEPS\CropEPS.cs" />
+    <Compile Include="WorkingWithGradient\AddDiagonalGradientPS.cs" />
+    <Compile Include="WorkingWithGradient\AddHorizontalGradientXPS.cs" />
+    <Compile Include="WorkingWithGradient\AddHorizontalGradientPS.cs" />
+    <Compile Include="WorkingWithGradient\AddRadialGradient2PS.cs" />
+    <Compile Include="WorkingWithGradient\AddRadialGradient1PS.cs" />
+    <Compile Include="WorkingWithGradient\AddVerticalGradientPS.cs" />
+    <Compile Include="WorkingWithGradient\AddDiagonalGradientXPS.cs" />
+    <Compile Include="WorkingWithGradient\AddVerticalGradientXPS.cs" />
+    <Compile Include="WorkingWithHatches\AddHatchPatternPS.cs" />
+    <Compile Include="WorkingWithEPS\ResizeEPS.cs" />
+    <Compile Include="WorkingWithImageConversion\SaveImageAsEPS.cs" />
+    <Compile Include="WorkingWithImages\AddImageXPS.cs" />
+    <Compile Include="WorkingWithImages\AddImagePS.cs" />
+    <Compile Include="WorkingWithImages\AddTiledImageXPS.cs" />
+    <Compile Include="WorkingWithPages\AddPage2PS.cs" />
+    <Compile Include="WorkingWithPages\AddPage1PS.cs" />
+    <Compile Include="WorkingWithPages\RemovePageXPS.cs" />
+    <Compile Include="WorkingWithPages\AddPageXPS.cs" />
+    <Compile Include="WorkingWithPrintTickets\CreateCustomPrintTicket.cs" />
+    <Compile Include="WorkingWithPrintTickets\EditPrintTicket.cs" />
+    <Compile Include="WorkingWithPrintTickets\LinkPrintTickets.cs" />
+    <Compile Include="WorkingWithPrintTickets\GetPrintTickets.cs" />
+    <Compile Include="WorkingWithShapes\AddRectanglePS.cs" />
+    <Compile Include="WorkingWithShapes\AddEllipsePS.cs" />
+    <Compile Include="WorkingWithShapes\AddEllipseXPS.cs" />
+    <Compile Include="WorkingWithShapes\ApplyDifferentColorSpacesXPS.cs" />
+    <Compile Include="WorkingWithShapes\AddRectangleXPS.cs" />
+    <Compile Include="WorkingWithTexture\AddTextureTilingPatternPS.cs" />
+    <Compile Include="WorkingWithText\AddTextUsingUnicodeStringPS.cs" />
+    <Compile Include="WorkingWithText\AddTextPS.cs" />
+    <Compile Include="WorkingWithText\AddTextXPS.cs" />
+    <Compile Include="WorkingWithText\AddTextUsingUnicodeStringXPS.cs" />
+    <Compile Include="WorkingWithTransparency\AddTransparentImagePS.cs" />
+    <Compile Include="WorkingWithTransparency\ShowPseudoTransparencyPS.cs" />
+    <Compile Include="WorkingWithTransparency\AddTransparentObjectXPS.cs" />
+    <Compile Include="WorkingWithTransparency\SetOpacityMaskXPS.cs" />
+    <Compile Include="WorkingWithVisualBrush\AddGrid.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_AddNamespace.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_AddNamedValueItem.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_ChangeNamedValueItem.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_ChangeArrayItems.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_AddArrayItems.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_AddSimpleProperties.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\ChangeMetadata_ChangeValues.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\AddMetadata.cs" />
+    <Compile Include="WorkingWithXMPMetadataInEPS\GetMetadata.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--None Include="packages.drawing.config" /-->
+  </ItemGroup>
+
+</Project>

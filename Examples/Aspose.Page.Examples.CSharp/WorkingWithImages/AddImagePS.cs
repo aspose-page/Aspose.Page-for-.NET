@@ -1,7 +1,12 @@
 ﻿using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 using System.IO;
 
 namespace CSharp.WorkingWithShapes
@@ -31,7 +36,7 @@ namespace CSharp.WorkingWithShapes
                 using (Bitmap image = new Bitmap(dataDir + "TestImage Format24bppRgb.jpg"))
                 {
                     //Create image transform
-                    System.Drawing.Drawing2D.Matrix transform = new System.Drawing.Drawing2D.Matrix();
+                    Matrix transform = new Matrix();
                     transform.Translate(35, 300);
                     transform.Scale(3, 3);
                     transform.Rotate(-45);

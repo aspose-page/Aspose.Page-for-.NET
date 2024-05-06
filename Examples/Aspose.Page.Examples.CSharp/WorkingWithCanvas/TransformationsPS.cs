@@ -1,7 +1,12 @@
 ﻿using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 using System.IO;
 
 namespace CSharp.WorkingWithCanvas
@@ -26,12 +31,12 @@ namespace CSharp.WorkingWithCanvas
                 document.Translate(100, 100);
 
                 //Create graphics path from the rectangle
-                System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
-                path.AddRectangle(new System.Drawing.RectangleF(0, 0, 150, 100));
+                GraphicsPath path = new GraphicsPath();
+                path.AddRectangle(new RectangleF(0, 0, 150, 100));
 
 ////////////////////////////////////// No transformations ///////////////////////////////////////////////////////////////
                 //Set paint in graphics state on upper level
-                document.SetPaint(new System.Drawing.SolidBrush(Color.Orange));
+                document.SetPaint(new SolidBrush(Color.Orange));
 
                 //Fill the first rectangle that is on on upper level graphics state and that is without any transformations.
                 document.Fill(path);
@@ -48,7 +53,7 @@ namespace CSharp.WorkingWithCanvas
                 document.Translate(250, 0);
 
                 //Set paint in the current graphics state
-                document.SetPaint(new System.Drawing.SolidBrush(Color.Blue));
+                document.SetPaint(new SolidBrush(Color.Blue));
 
                 //Fill the second rectangle in the current graphics state (has translation transformation)
                 document.Fill(path);
@@ -69,7 +74,7 @@ namespace CSharp.WorkingWithCanvas
                 document.Scale(0.5f, 0.75f);
 
                 //Set paint in the current graphics state
-                document.SetPaint(new System.Drawing.SolidBrush(Color.Red));
+                document.SetPaint(new SolidBrush(Color.Red));
 
                 //Fill the third rectangle in the current graphics state (has scale transformation)
                 document.Fill(path);
@@ -91,7 +96,7 @@ namespace CSharp.WorkingWithCanvas
                 document.Rotate(45);
 
                 //Set paint in the current graphics state
-                document.SetPaint(new System.Drawing.SolidBrush(Color.Green));
+                document.SetPaint(new SolidBrush(Color.Green));
 
                 //Fill the fourth rectangle in the current graphics state (has rotation transformation)
                 document.Fill(path);
@@ -113,7 +118,7 @@ namespace CSharp.WorkingWithCanvas
                 document.Shear(0.1f, 0.2f);
 
                 //Set paint in the current graphics state
-                document.SetPaint(new System.Drawing.SolidBrush(Color.Pink));
+                document.SetPaint(new SolidBrush(Color.Pink));
 
                 //Fill the fifth rectangle in the current graphics state (has shear transformation)
                 document.Fill(path);
@@ -132,10 +137,10 @@ namespace CSharp.WorkingWithCanvas
                 document.WriteGraphicsSave();
 
                 //Transform current graphics state with complex transformation. So we add translation, scale and rotation components to the current transformation.
-                document.Transform(new System.Drawing.Drawing2D.Matrix(1.2f, -0.965925f, 0.258819f, 1.5f, 0f, 50));
+                document.Transform(new Matrix(1.2f, -0.965925f, 0.258819f, 1.5f, 0f, 50));
 
                 //Set paint in the current graphics state
-                document.SetPaint(new System.Drawing.SolidBrush(Color.Aquamarine));
+                document.SetPaint(new SolidBrush(Color.Aquamarine));
 
                 //Fill the sixth rectangle in the current graphics state (has complex transformation)
                 document.Fill(path);

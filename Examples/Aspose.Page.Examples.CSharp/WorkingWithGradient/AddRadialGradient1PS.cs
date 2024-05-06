@@ -1,7 +1,12 @@
 ﻿using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 using System.IO;
 
 
@@ -30,8 +35,8 @@ namespace CSharp.WorkingWithGradient
                 float height = 200;
 
                 //Create graphics path from the rectangle bounds
-                RectangleF bounds = new System.Drawing.RectangleF(offsetX, offsetY, width, height);
-                System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
+                RectangleF bounds = new RectangleF(offsetX, offsetY, width, height);
+                GraphicsPath path = new GraphicsPath();
                 path.AddEllipse(bounds);
 
                 //Create and fill color blend object
@@ -50,7 +55,7 @@ namespace CSharp.WorkingWithGradient
                 brush.InterpolationColors = colorBlend;
                 //Create a transform for brush. X and Y scale component must be equal to width and height of the rectangle correspondingly.
                 //Translation components are offsets of the rectangle
-                System.Drawing.Drawing2D.Matrix brushTransform = new System.Drawing.Drawing2D.Matrix(width, 0, 0, height, offsetX, offsetY);
+                Matrix brushTransform = new Matrix(width, 0, 0, height, offsetX, offsetY);
                 //Set transform
                 brush.Transform = brushTransform;
 

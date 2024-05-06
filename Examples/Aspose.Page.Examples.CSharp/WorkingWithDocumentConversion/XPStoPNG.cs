@@ -1,6 +1,11 @@
-﻿using Aspose.Page.XPS;
+﻿using System.IO;
+using Aspose.Page.XPS;
 using Aspose.Page.XPS.Presentation.Image;
-using System.IO;
+#if ASPOSE_DRAWING
+using SmoothingMode = Aspose.Page.Drawing.Drawing2D.SmoothingMode;
+#else
+using SmoothingMode = System.Drawing.Drawing2D.SmoothingMode;
+#endif
 
 namespace CSharp.WorkingWithDocumentConversion
 {
@@ -21,7 +26,7 @@ namespace CSharp.WorkingWithDocumentConversion
             // Initialize options object with necessary parameters.
             PngSaveOptions options = new PngSaveOptions()
             {
-                SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality,
+                SmoothingMode = SmoothingMode.HighQuality,
                 Resolution = 300,
                 PageNumbers = new int[] { 1, 2, 6 }
             };

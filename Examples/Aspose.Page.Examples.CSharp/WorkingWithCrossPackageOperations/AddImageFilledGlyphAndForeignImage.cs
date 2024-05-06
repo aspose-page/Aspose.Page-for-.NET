@@ -1,6 +1,11 @@
 ﻿using Aspose.Page.XPS;
 using Aspose.Page.XPS.XpsModel;
 using System.Drawing;
+#if ASPOSE_DRAWING
+using FontStyle = Aspose.Page.Drawing.FontStyle;
+#else
+using FontStyle = System.Drawing.FontStyle;
+#endif
 
 namespace CSharp.WorkingWithCrossPackageOperations
 {

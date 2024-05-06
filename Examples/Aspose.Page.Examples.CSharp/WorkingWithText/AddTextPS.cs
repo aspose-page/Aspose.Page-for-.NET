@@ -2,8 +2,13 @@
 using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
 using Aspose.Page.Font;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 using System.IO;
 
 namespace CSharp.WorkingWithText
@@ -33,7 +38,7 @@ namespace CSharp.WorkingWithText
                 PsDocument document = new PsDocument(outPsStream, options, false);
 
 ////////////////////////////////////// Using sysem font (located in system fonts folders) for filling text //////////////////
-                System.Drawing.Font font = new System.Drawing.Font("Times New Roman", fontSize, FontStyle.Bold);
+                Font font = new Font("Times New Roman", fontSize, FontStyle.Bold);
                 //Fill text with default or already defined color. In given case it is black.
                 document.FillText(str, font, 50, 100);
                 //Fill text with Blue color.

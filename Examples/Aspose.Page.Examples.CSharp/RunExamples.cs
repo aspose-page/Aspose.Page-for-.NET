@@ -47,22 +47,22 @@ namespace CSharp
             // WorkingWithDocument
             // =====================================================
             // =====================================================
-            //CreateDocumentXPS.Run();
-            //ChangeDocumentXPS.Run();
-            //CreateDocumentPS.Run();
+            CreateDocumentXPS.Run();
+            ChangeDocumentXPS.Run();
+            CreateDocumentPS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithDocumentConversion
             // =====================================================
             // =====================================================
-            //PostScriptToPdf.Run();
-            //PostScriptToImage.Run();
-            //XPStoPNG.Run();
-            //XPStoBMP.Run();
-            //XPStoJPEG.Run();
-            //XPStoTIFF.Run();
-            //XPStoPDF.Run();
+            PostScriptToPdf.Run();
+            PostScriptToImage.Run();
+            XPStoPNG.Run();
+            XPStoBMP.Run();
+            XPStoJPEG.Run();
+            XPStoTIFF.Run();
+            XPStoPDF.Run();
 
             // =====================================================
             // =====================================================
@@ -78,147 +78,147 @@ namespace CSharp
             // WorkingWithXMPMetadataInEPS
             // =====================================================
             // =====================================================
-            //CSharp.WorkingWithXMPMetadataInEPS.GetMetadata.Run();
-            //CSharp.WorkingWithXMPMetadataInEPS.AddMetadata.Run();
-            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_ChangeValues.Run();
-            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddSimpleProperties.Run();
-            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddArrayItems.Run();
-            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_ChangeArrayItems.Run();
-            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddNamedValueItem.Run();
-            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_ChangeNamedValueItem.Run();
-            //CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddNamespace.Run();
+            CSharp.WorkingWithXMPMetadataInEPS.GetMetadata.Run();
+            CSharp.WorkingWithXMPMetadataInEPS.AddMetadata.Run();
+            CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_ChangeValues.Run();
+            CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddSimpleProperties.Run();
+            CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddArrayItems.Run();
+            CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_ChangeArrayItems.Run();
+            CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddNamedValueItem.Run();
+            CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_ChangeNamedValueItem.Run();
+            CSharp.WorkingWithXMPMetadataInEPS.ChangeMetadata_AddNamespace.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithText
             // =====================================================
             // =====================================================
-            //AddTextXPS.Run();
-            //AddTextUsingUnicodeStringXPS.Run();
-            //AddTextPS.Run();
-            //AddTextUsingUnicodeStringPS.Run();
+            AddTextXPS.Run();
+            AddTextUsingUnicodeStringXPS.Run();
+            AddTextPS.Run();
+            AddTextUsingUnicodeStringPS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithImages
             // =====================================================
             // =====================================================
-            //AddImageXPS.Run();
-            //AddTiledImageXPS.Run();
-            //AddImagePS.Run();
+            AddImageXPS.Run();
+            AddTiledImageXPS.Run();
+            AddImagePS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithTextures
             // =====================================================
             // =====================================================
-            //AddTextureTilingPatternPS.Run();
+            AddTextureTilingPatternPS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithHatchPattern
             // =====================================================
             // =====================================================
-            //AddHatchPatternPS.Run();
+            AddHatchPatternPS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithGradient
             // =====================================================
             // =====================================================
-            //AddDiagonalGradientXPS.Run();
-            //AddVerticalGradientXPS.Run();
-            //AddHorizontalGradientXPS.Run();
-            //AddHorizontalGradientPS.Run();
-            //AddVerticalGradientPS.Run();
-            //AddDiagonalGradientPS.Run();
-            //AddRadialGradient1PS.Run();
-            //AddRadialGradient2PS.Run();
+            AddDiagonalGradientXPS.Run();
+            AddVerticalGradientXPS.Run();
+            AddHorizontalGradientXPS.Run();
+            AddHorizontalGradientPS.Run();
+            AddVerticalGradientPS.Run();
+            AddDiagonalGradientPS.Run();
+            AddRadialGradient1PS.Run();
+            AddRadialGradient2PS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithShapes
             // =====================================================
             // =====================================================
-            //AddRectangleXPS.Run();
-            //AddEllipseXPS.Run();
-            //ApplyDifferentColorSpacesXPS.Run();
-            //AddEllipsePS.Run();
-            //AddRectanglePS.Run();
+            AddRectangleXPS.Run();
+            AddEllipseXPS.Run();
+            ApplyDifferentColorSpacesXPS.Run();
+            AddEllipsePS.Run();
+            AddRectanglePS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithPages
             // =====================================================
             // =====================================================
-            //AddPageXPS.Run();
-            //RemovePageXPS.Run();
-            //AddPage1PS.Run();
-            //AddPage2PS.Run();
+            AddPageXPS.Run();
+            RemovePageXPS.Run();
+            AddPage1PS.Run();
+            AddPage2PS.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithPrintTickets
             // =====================================================
             // =====================================================
-            //GetPrintTickets.Run();
-            //LinkPrintTickets.Run();
-            //CreateCustomPrintTicket.Run();
-            //EditPrintTicket.Run();
+            GetPrintTickets.Run();
+            LinkPrintTickets.Run();
+            CreateCustomPrintTicket.Run();
+            EditPrintTicket.Run();
 
             // =====================================================
             // =====================================================
             // WorkingWithTransparency
             // =====================================================
             // =====================================================
-            //AddTransparentObjectXPS.Run();
-            //SetOpacityMaskXPS.Run();
-            //ShowPseudoTransparencyPS.Run();
-            //AddTransparentImagePS.Run();
+            AddTransparentObjectXPS.Run();
+            SetOpacityMaskXPS.Run();
+            ShowPseudoTransparencyPS.Run();
+            AddTransparentImagePS.Run();
 
             // =====================================================
             // =====================================================
             //WorkingWithGrid
             // =====================================================
             // =====================================================
-            //AddGrid.Run();
+            AddGrid.Run();
 
             // =====================================================
             // =====================================================
             //WorkingWithCrossPackageOperations
             // =====================================================
             // =====================================================
-            //AddImageFilledGlyphAndForeignImage.Run();
-            //AddGlyphCloneAndChangeColor.Run();
-            //ManipulatePages.Run();
+            AddImageFilledGlyphAndForeignImage.Run();
+            AddGlyphCloneAndChangeColor.Run();
+            ManipulatePages.Run();
 
             // =====================================================
             // =====================================================
             //WorkingWithImageConversion
             // =====================================================
             // =====================================================
-            //SaveImageAsEPS.Run();
+            SaveImageAsEPS.Run();
 
             // =====================================================
             // =====================================================
             //ResizeEPS
             // =====================================================
             // =====================================================
-            //ResizeEPS.RunPoints();
-            //ResizeEPS.RunInches();
-            //ResizeEPS.RunMms();
-            //ResizeEPS.RunPercents();
-            //CropEPS.Run();
+            ResizeEPS.RunPoints();
+            ResizeEPS.RunInches();
+            ResizeEPS.RunMms();
+            ResizeEPS.RunPercents();
+            CropEPS.Run();
 
             // =====================================================
             // =====================================================
             //WorkingWithCanvas
             // =====================================================
             // =====================================================
-            //TransformationsXPS.Run();
-            //ClippingXPS.Run();
-            //TransformationsPS.Run();
-            //ClippingPS.Run();
+            TransformationsXPS.Run();
+            ClippingXPS.Run();
+            TransformationsPS.Run();
+            ClippingPS.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
@@ -227,102 +227,106 @@ namespace CSharp
 
         public static String GetDataDir_GettingStarted()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "GettingStarted/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "GettingStarted" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithGradient()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithGradient/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithGradient" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithVisualBrush()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithVisualBrush/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithVisualBrush" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithImages()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithImages/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithImages" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithTextures()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithTextures/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithTextures" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithShapes()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithShapes/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithShapes" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithText()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithText/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithText" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithPages()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithPages/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithPages" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithPrintTickets()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithPrintTickets/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithPrintTickets" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithTransparency()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithTransparency/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithTransparency" + Path.DirectorySeparatorChar);
         }
         public static String GetDataDir_WorkingWithDocument()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithDocument/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithDocument" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithDocumentConversion()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithDocumentConversion/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithDocumentConversion" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithDocumentMerging()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithDocumentMerging/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithDocumentMerging" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithXMPMetadataInEPS()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithXMPMetadataInEPS/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithXMPMetadataInEPS" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithEPS()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithEPS/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithEPS" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithCrossPackageOperations()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithCrossPackageOperations/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithCrossPackageOperations" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithImageConversion()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithImageConversion/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithImageConversion" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithCanvas()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithCanvas/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithCanvas" + Path.DirectorySeparatorChar);
         }
 
         public static String GetDataDir_WorkingWithHatches()
         {
-            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithHatches/");
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithHatches" + Path.DirectorySeparatorChar);
         }
 
 
         public static string GetDataDir_Data()
         {
+#if ASPOSE_DRAWING
+            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent;
+#else
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
+#endif
             string startDirectory = null;
             if (parent != null)
             {
@@ -336,7 +340,7 @@ namespace CSharp
             {
                 startDirectory = parent.FullName;
             }
-            return Path.Combine(startDirectory, "Data\\");
+            return Path.Combine(startDirectory, "Data" + Path.DirectorySeparatorChar);
         }
     }
 }

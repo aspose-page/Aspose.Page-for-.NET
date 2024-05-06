@@ -1,7 +1,12 @@
 ﻿using Aspose.Page.EPS;
 using Aspose.Page.EPS.Device;
+#if ASPOSE_DRAWING
+using Aspose.Page.Drawing;
+using Aspose.Page.Drawing.Drawing2D;
+#else
 using System.Drawing;
 using System.Drawing.Drawing2D;
+#endif
 using System.IO;
 
 namespace CSharp.WorkingWithShapes
@@ -24,18 +29,18 @@ namespace CSharp.WorkingWithShapes
                 PsDocument document = new PsDocument(outPsStream, options, false);
 
                 //Create graphics path from the first rectangle
-                System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
-                path.AddRectangle(new System.Drawing.RectangleF(250, 100, 150, 100));
+                GraphicsPath path = new GraphicsPath();
+                path.AddRectangle(new RectangleF(250, 100, 150, 100));
                 //Set paint
-                document.SetPaint(new System.Drawing.SolidBrush(Color.Orange));
+                document.SetPaint(new SolidBrush(Color.Orange));
                 //Fill the rectangle
                 document.Fill(path);
 
                 //Create graphics path from the second rectangle
-                path = new System.Drawing.Drawing2D.GraphicsPath();
-                path.AddRectangle(new System.Drawing.RectangleF(250, 300, 150, 100));
+                path = new GraphicsPath();
+                path.AddRectangle(new RectangleF(250, 300, 150, 100));
                 //Set stroke
-                document.SetStroke(new System.Drawing.Pen(new System.Drawing.SolidBrush(Color.Red), 3));
+                document.SetStroke(new Pen(new SolidBrush(Color.Red), 3));
                 //Stroke (outline) the rectangle
                 document.Draw(path);
 
