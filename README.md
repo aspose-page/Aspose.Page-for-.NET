@@ -46,6 +46,9 @@ Directory | Description
 ## Platform Independence
 
 Aspose.Page for .NET can be integrated with any kind of ASP.NET Web Application or a Windows Application.
+> [!IMPORTANT] 
+> From version 24.4 we started to support non-Windows operation systems, like Linux, MacOS etc. New nuget package [Aspose.Page.Drawing](https://www.nuget.org/packages/Aspose.Page.Drawing) 
+has been released for this purpose. The separate solutions for .Net Standard 2.0 and .NET 7.0 are added to these examples.
 
 ## Get Started with Aspose.Page for .NET
 
@@ -66,23 +69,12 @@ xDocs.Save(dir + "output.xps");
 ## Convert a PostScript (PS) File to PDF Format
 
 ```csharp
-// initialize PostScript input stream
-var psStream = new System.IO.FileStream(dir + "template.ps", System.IO.FileMode.Open, System.IO.FileAccess.Read);
-// initialize PDF output stream
-var pdfStream = new System.IO.FileStream(dir + "output.pdf", System.IO.FileMode.Create, System.IO.FileAccess.Write);
 // read PS file
-var document = new PsDocument(psStream);
+var document = new PsDocument(dir + "template.ps");
 // create a device for output steram
-var device = new PdfDevice(pdfStream);
-try
-{
-    document.Save(device, options);
-}
-finally
-{
-    psStream.Close();
-    pdfStream.Close();
-}
+var device = new PdfDevice(dir + "output.pdf");
+// save PS document as PDF
+document.SaveAsPdf(dir + "output.pdf", new PdfSaveOptions());
 ```
 
 [Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/page/net) | [Docs](https://docs.aspose.com/page/net/) | [Demos](https://products.aspose.app/page/family) | [API Reference](https://apireference.aspose.com/page/net) | [Examples](https://github.com/aspose-page/Aspose.Page-for-.NET) | [Blog](https://blog.aspose.com/category/page/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/page) |  [Temporary License](https://purchase.aspose.com/temporary-license)

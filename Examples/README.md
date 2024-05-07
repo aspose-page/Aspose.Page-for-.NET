@@ -12,7 +12,7 @@ This package contains C# Examples Project for [Aspose.Page for .NET](https://pro
 
 The package contains C# examples. Follow the given steps to proceed with project build:
 
-* Extract the downloaded project and open the solution file in Visual Studio
+* Extract the downloaded github project and open the solution file in Visual Studio. Use *Aspose.Page.Examples.CSharp.sln* for **Windows** system and *Aspose.Page.Drawing.Core.3.1.Examples.CSharp.sln* or *Aspose.Page.Drawing.NET.7.Examples.CSharp.sln* solution for **non-Windows** operation system, like Linux or MacOS.
 * Right click on solution and press "Enable NuGet package Restore"
 * Build the project
 
