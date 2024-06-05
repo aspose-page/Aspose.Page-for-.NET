@@ -35,7 +35,7 @@ namespace CSharp
             // =====================================================
             // Getting Started
             // =====================================================
-            // =====================================================
+            // =====================================================    
             LoadLicenseFromFile.Run();
             //ApplyMeteredLicense.Run();
             // LoadLicenseFromStreamObject.Run();
@@ -107,6 +107,8 @@ namespace CSharp
             AddTiledImageXPS.Run();
             AddImagePS.Run();
 
+            UseImageUtilitiesXPS.Run();
+
             // =====================================================
             // =====================================================
             // WorkingWithTextures
@@ -145,6 +147,8 @@ namespace CSharp
             ApplyDifferentColorSpacesXPS.Run();
             AddEllipsePS.Run();
             AddRectanglePS.Run();
+
+            UseShapeUtilitiesXPS.Run();
 
             // =====================================================
             // =====================================================
@@ -219,6 +223,7 @@ namespace CSharp
             ClippingXPS.Run();
             TransformationsPS.Run();
             ClippingPS.Run();
+
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
