@@ -29,8 +29,8 @@ namespace CSharp.WorkingWithCanvas
                 PsDocument document = new PsDocument(outPsStream, options, false);
 
                 //Create graphics path from the rectangle
-                GraphicsPath rectangePath = new GraphicsPath();
-                rectangePath.AddRectangle(new RectangleF(0, 0, 300, 200));
+                GraphicsPath rectanglePath = new GraphicsPath();
+                rectanglePath.AddRectangle(new RectangleF(0, 0, 300, 200));
 
 ////////////////////////////////////// Clipping by shape //////////////////////////////////////////////////////////////////////
 
@@ -51,7 +51,7 @@ namespace CSharp.WorkingWithCanvas
                 document.SetPaint(new SolidBrush(Color.Blue));
 
                 //Fill the rectangle in the current graphics state (with clipping)
-                document.Fill(rectangePath);
+                document.Fill(rectanglePath);
 
                 //Restore graphics state to the previus (upper) level
                 document.WriteGraphicsRestore();
@@ -64,10 +64,33 @@ namespace CSharp.WorkingWithCanvas
 
                 document.SetStroke(pen);
 
-                //Draw the rectangle in the current graphics state (has no clipping) above clipped rectngle
-                document.Draw(rectangePath);
+                //Draw the rectangle in the current graphics state (has no clipping) above clipped rectangle
+                document.Draw(rectanglePath);
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// Clipping by text //////////////////////////////////////////////////////////////////////
+
+                //Save graphics state in order to return back to this state after transformation
+                document.WriteGraphicsSave();
+
+                //Displace current graphics state on 100 points to the right and 100 points to the bottom.
+                document.Translate(0, 350);
+
+                int fontSize = 120;
+                Font font = new Font("Arial", fontSize, FontStyle.Bold);
+
+                //Clip rectangle by text's outline
+                document.ClipText("ABC", font, 20, fontSize + 10);
+                document.Fill(rectanglePath);
+
+                document.WriteGraphicsRestore();
+
+                document.Translate(0, 350);
+
+                document.SetStroke(pen);
+                //Draw the rectangle in the current graphics state (has no clipping) above clipped rectangle
+                document.Draw(rectanglePath);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
                 //Close current page
                 document.ClosePage();

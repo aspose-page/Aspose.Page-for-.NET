@@ -71,6 +71,19 @@ namespace CSharp.WorkingWithText
                 document.FillAndStrokeText(str, drFont, 50, 550, new SolidBrush(Color.Orange), new Pen(new SolidBrush(Color.Blue), 2));
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/////////////////////////////// Using custom font (located in custom fonts folders) ang glyphs widths for filling text ////////
+                drFont = ExternalFontCache.FetchDrFont("Palatino Linotype", fontSize, FontStyle.Regular);
+                //Glyphs widths
+                float[] widths = new float[] { 87, 87, 87, 87, 34, 87, 87 };
+                //Fill ASCII text using with assigning glyphs widths.
+                document.FillText("BAMBOOK", widths, drFont, 50, 600, new SolidBrush(Color.Blue));
+///////////////////////////// Using custom font (located in custom fonts folders) ang glyphs widths for filling unicode text //
+                //Glyphs widths
+                widths = new float[] { 87, 34, 87, 87, 87, 87, 87 };
+                //Fill Unicode text using with assigning glyphs widths.
+                document.FillText("ЗООПАРК", widths, drFont, 50, 650, new SolidBrush(Color.Orange));
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
                 //Close current page
                 document.ClosePage();
 

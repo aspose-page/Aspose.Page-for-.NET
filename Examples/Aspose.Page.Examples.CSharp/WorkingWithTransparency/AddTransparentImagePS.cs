@@ -25,7 +25,7 @@ namespace CSharp.WorkingWithTransparency
                 //Create save options with A4 size
                 PsSaveOptions options = new PsSaveOptions();
                 //Set page's background color to see white image on it's own transparent background
-                options.BackgroundColor = Color.FromArgb(211, 8, 48);
+                options.BackgroundColor = Aspose.Page.Drawing.Color.FromArgb(211, 8, 48);
 
                 // Create new 1-paged PS Document
                 PsDocument document = new PsDocument(outPsStream, options, false);

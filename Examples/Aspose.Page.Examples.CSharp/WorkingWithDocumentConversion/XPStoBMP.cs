@@ -32,7 +32,7 @@ namespace CSharp.WorkingWithDocumentConversion
             };
 
             // Save XPS document to the images byte arrays. The first dimension is for inner documents
-            /// and the second one is for pages within inner documents.
+            // and the second one is for pages within inner documents.
             byte[][][] imagesBytes = document.SaveAsImage(options);
 
             // Iterate through document partitions (fixed documents, in XPS terms)

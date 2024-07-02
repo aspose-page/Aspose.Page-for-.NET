@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Page, Version=24.3.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.24.3.2\lib\net4.0\Aspose.Page.dll</HintPath>
+    <Reference Include="Aspose.Page, Version=24.6.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.24.6.1\lib\net4.0\Aspose.Page.dll</HintPath>
     </Reference>
     <Reference Include="DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\..\packages\DotNetZip.1.16.0\lib\net40\DotNetZip.dll</HintPath>
@@ -92,6 +92,7 @@
     <Compile Include="WorkingWithImages\AddImageXPS.cs" />
     <Compile Include="WorkingWithImages\AddImagePS.cs" />
     <Compile Include="WorkingWithImages\AddTiledImageXPS.cs" />
+    <Compile Include="WorkingWithImages\UseImageUtilitiesXPS.cs" />
     <Compile Include="WorkingWithPages\AddPage2PS.cs" />
     <Compile Include="WorkingWithPages\AddPage1PS.cs" />
     <Compile Include="WorkingWithPages\RemovePageXPS.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="WorkingWithShapes\AddEllipseXPS.cs" />
     <Compile Include="WorkingWithShapes\ApplyDifferentColorSpacesXPS.cs" />
     <Compile Include="WorkingWithShapes\AddRectangleXPS.cs" />
+    <Compile Include="WorkingWithShapes\UseShapeUtilitiesXPS.cs" />
     <Compile Include="WorkingWithTexture\AddTextureTilingPatternPS.cs" />
     <Compile Include="WorkingWithText\AddTextUsingUnicodeStringPS.cs" />
     <Compile Include="WorkingWithText\AddTextPS.cs" />
