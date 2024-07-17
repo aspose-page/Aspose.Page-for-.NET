@@ -23,16 +23,10 @@ namespace CSharp.GettingStarted
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_GettingStarted();
-            //Create file stream for EPS file
-            System.IO.Stream psStream = new System.IO.FileStream(dataDir + "input.eps", System.IO.FileMode.Open, System.IO.FileAccess.Read);
-            //Create an instance of PostScript document from stream
-            PsDocument document = new PsDocument(psStream);
-            //Create Image device for converting EPS file to PNG image
-            ImageDevice device = new ImageDevice();
-            //Save EPS file as image
-            document.Save(device, new ImageSaveOptions());
-            //Get images bytes. One bytes array for one page. In our case we have one page.
-            byte[][] imagesBytes = device.ImagesBytes;
+            //Create an instance of PostScript document from PS file
+            PsDocument document = new PsDocument(dataDir + "input.eps");
+            //Save EPS file as image bytes. One bytes array for one page. In our case we have one page.
+            byte[][] imagesBytes = document.SaveAsImage(new ImageSaveOptions());
             //Save image bytes to file
             using (FileStream fos = File.OpenWrite(dataDir + "eps_out.png"))
             {
