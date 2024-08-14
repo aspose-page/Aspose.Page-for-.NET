@@ -160,6 +160,8 @@ namespace CSharp
             AddPage1PS.Run();
             AddPage2PS.Run();
 
+            ModifyXpsPageOnConversion.Run();
+
             // =====================================================
             // =====================================================
             // WorkingWithPrintTickets

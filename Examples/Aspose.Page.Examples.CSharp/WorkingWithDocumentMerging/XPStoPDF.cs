@@ -25,8 +25,7 @@ namespace CSharp.WorkingWithDocumentMerging
             string[] filesToMerge = new string[] { dataDir + "Demo.xps", dataDir + "sample.xps" };
 
             // Merge XPS files to output PDF file
-            document.MergeToPdf(dataDir + "mergedXPSfiles.pdf", filesToMerge, options);
-            
+            document.MergeToPdf(filesToMerge, dataDir + "mergedXPSfiles.pdf", options);
             // ExEnd:1
         }
     }

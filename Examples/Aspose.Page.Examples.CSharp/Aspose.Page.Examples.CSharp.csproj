@@ -97,6 +97,7 @@
     <Compile Include="WorkingWithPages\AddPage1PS.cs" />
     <Compile Include="WorkingWithPages\RemovePageXPS.cs" />
     <Compile Include="WorkingWithPages\AddPageXPS.cs" />
+    <Compile Include="WorkingWithPages\ModifyXpsPageOnConversion.cs" />
     <Compile Include="WorkingWithPrintTickets\CreateCustomPrintTicket.cs" />
     <Compile Include="WorkingWithPrintTickets\EditPrintTicket.cs" />
     <Compile Include="WorkingWithPrintTickets\LinkPrintTickets.cs" />
