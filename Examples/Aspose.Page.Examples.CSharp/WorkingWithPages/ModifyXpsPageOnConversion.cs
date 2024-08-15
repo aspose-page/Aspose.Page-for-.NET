@@ -15,7 +15,7 @@ namespace CSharp.WorkingWithPages
             // ExStart:ModifyingXpsPageOnConversion
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_WorkingWithPages();
-            // Create new XPS Document
+            // Open an XPS document
             using (XpsDocument doc = new XpsDocument(dataDir + "Sample3.xps"))
             // Create a font
             using (Stream fontStream = File.OpenRead(dataDir + "arialbd.ttf"))
