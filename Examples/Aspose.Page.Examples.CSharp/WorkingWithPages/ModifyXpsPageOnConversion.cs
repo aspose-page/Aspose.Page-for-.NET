@@ -24,7 +24,7 @@ namespace CSharp.WorkingWithPages
                 PdfSaveOptions options = new PdfSaveOptions();
                 // Set the filter for the pages that need conversion
                 options.PageNumbers = new int[] { 2, 6, 7, 13 };
-                // Add the event handler that will execute right before the conversion each page
+                // Add the event handler that will execute right before the conversion of each page
                 options.BeforePageSavingEventHandlers.Add(new NavigationInjector(doc.CreateFont(fontStream), options.PageNumbers));
                 // Save resultant XPS document
                 doc.SaveAsPdf(dataDir + "ModifyPageOnConversion_out.pdf", options);
