@@ -38,7 +38,7 @@ namespace CSharp.WorkingWithDocumentConversion
 
             foreach (byte[] imageBytes in imagesBytes)
             {
-                string imagePath = Path.GetFullPath(dataDir + "out_image" + i.ToString() +"." + options.ImageFormat.ToString().ToLower());
+                string imagePath = Path.GetFullPath(dataDir + "image_out" + i.ToString() +"." + options.ImageFormat.ToString().ToLower());
                 using (FileStream fs = new FileStream(imagePath, FileMode.Create, FileAccess.Write))
                 {
                     fs.Write(imageBytes, 0, imageBytes.Length);

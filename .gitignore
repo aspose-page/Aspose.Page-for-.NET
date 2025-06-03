@@ -9,6 +9,8 @@ bin/
 *_out_*
 *_out*
 output*.*
+out*.*
+*.ttf
 * out*
 *.ldb
 Thumbs.db

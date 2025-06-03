@@ -19,6 +19,7 @@ using CSharp.WorkingWithCrossPackageOperations;
 using CSharp.WorkingWithImageConversion;
 using CSharp.WorkingWithCanvas;
 using CSharp.WorkingWithEPS;
+using CSharp.WorkingWithFonts;
 
 namespace CSharp
 {
@@ -218,6 +219,14 @@ namespace CSharp
 
             // =====================================================
             // =====================================================
+            //WorkingWithFonts
+            // =====================================================
+            // =====================================================
+            ConvertType1Font.Run();
+            ConvertType3Font.Run();
+
+            // =====================================================
+            // =====================================================
             //WorkingWithCanvas
             // =====================================================
             // =====================================================
@@ -324,6 +333,11 @@ namespace CSharp
         public static String GetDataDir_WorkingWithHatches()
         {
             return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithHatches" + Path.DirectorySeparatorChar);
+        }
+
+        public static String GetDataDir_WorkingWithFonts()
+        {
+            return Path.GetFullPath(RunExamples.GetDataDir_Data() + "WorkingWithFonts" + Path.DirectorySeparatorChar);
         }
 
 

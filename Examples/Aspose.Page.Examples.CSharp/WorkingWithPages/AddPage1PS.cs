@@ -13,7 +13,7 @@ namespace CSharp.WorkingWithPages
             string dataDir = RunExamples.GetDataDir_WorkingWithPages();
             
             //Create output stream for PostScript document
-            using (Stream outPsStream = new FileStream(dataDir + "document1.ps", FileMode.Create))
+            using (Stream outPsStream = new FileStream(dataDir + "document1_out.ps", FileMode.Create))
             {
                 //Create save options with A4 size
                 PsSaveOptions options = new PsSaveOptions();

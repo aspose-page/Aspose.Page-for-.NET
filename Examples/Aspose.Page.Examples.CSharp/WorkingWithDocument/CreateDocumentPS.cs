@@ -13,7 +13,7 @@ namespace CSharp.WorkingWithDocument
             string dir = RunExamples.GetDataDir_WorkingWithDocument();
 
             //Create output stream for PostScript document
-            using (Stream outPsStream = new FileStream(dir + "document.ps", FileMode.Create))
+            using (Stream outPsStream = new FileStream(dir + "document_out.ps", FileMode.Create))
             {
                 //Create save options
                 PsSaveOptions options = new PsSaveOptions();

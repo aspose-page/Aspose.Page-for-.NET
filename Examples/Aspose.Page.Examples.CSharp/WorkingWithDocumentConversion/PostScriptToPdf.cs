@@ -30,6 +30,10 @@ namespace CSharp.WorkingWithDocumentConversion
             //PdfSaveOptions options = new PdfSaveOptions(suppressErrorsnew, Aspose.Page.Drawing.Size(595x842));
             // or
             //saveOptions.Size = new Aspose.Page.Drawing.Size(595x842);
+            //If PostScript file contains some graphics written as Type3 font glyphs, but it is not actual glyphs
+            //the resulting PDF may be incorrect because of default value of options.ConvertFontsToTTF = true
+            //Try to set this
+            //options.ConvertFontsToTTF = false;
 
             // Save document as PDF
             document.SaveAsPdf(dataDir + "outputPDF_out.pdf", options);

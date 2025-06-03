@@ -27,7 +27,7 @@ Directory | Description
 - Preserve print tickets and  add default print tickets to new XPS documents.
 - Perform cross-package operations such as, inserting a page from another document.
 - Conversion of XPS, PS & EPS documents to other popular formats.
-- Supports PostScript language levels 1-3 with an exception of font types: Type2 (CFF), Type14 (Chameleon), Types 9, 10, 11, 32 (CID-Keyed).
+- Supports PostScript language levels 1-3 with an exception of font types: Type2 (CFF), Type14 (Chameleon), Types 9, 10, 11.
 
 ## Read & Write XPS Format
 

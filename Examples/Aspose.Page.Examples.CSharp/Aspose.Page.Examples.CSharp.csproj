@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Page, Version=24.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.24.7.0\lib\net4.0\Aspose.Page.dll</HintPath>
+    <Reference Include="Aspose.Page, Version=25.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\packages\Aspose.Page.25.5.0\lib\net4.0\Aspose.Page.dll</HintPath>
     </Reference>
     <Reference Include="DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\..\packages\DotNetZip.1.16.0\lib\net40\DotNetZip.dll</HintPath>
@@ -78,6 +78,8 @@
     <Compile Include="WorkingWithDocument\ChangeDocumentXPS.cs" />
     <Compile Include="WorkingWithDocument\CreateDocumentXPS.cs" />
     <Compile Include="WorkingWithEPS\CropEPS.cs" />
+    <Compile Include="WorkingWithFonts\ConvertType3Font.cs" />
+    <Compile Include="WorkingWithFonts\ConvertType1Font.cs" />
     <Compile Include="WorkingWithGradient\AddDiagonalGradientPS.cs" />
     <Compile Include="WorkingWithGradient\AddHorizontalGradientXPS.cs" />
     <Compile Include="WorkingWithGradient\AddHorizontalGradientPS.cs" />
